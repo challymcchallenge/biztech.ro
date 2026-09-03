@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /_src/
+Sitemap: https://www.biztech.ro/sitemap.xml

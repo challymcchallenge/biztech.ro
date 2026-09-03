@@ -1,0 +1,1061 @@
+<!DOCTYPE html>
+<html lang="ro" data-theme="dark">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P9GCEV3J79"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', { 'analytics_storage': 'denied', 'ad_storage': 'denied', 'ad_user_data': 'denied', 'ad_personalization': 'denied', 'wait_for_update': 500 });
+  gtag('js', new Date());
+  gtag('config', 'G-P9GCEV3J79', { 'anonymize_ip': true });
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard Raportare Inteligentă + Analiză AI pentru Horeca | BIZTECH Consulting</title>
+<meta name="description" content="Toate datele restaurantului dumneavoastră într-un singur dashboard inteligent, conectat la Breeze, ExpresSoft și Charisma. Livrare în maximum 10 zile lucrătoare. România & Suedia.">
+<link rel="icon" href="assets/favicon.ico">
+<link rel="canonical" href="https://www.biztech.ro/">
+<link rel="alternate" hreflang="ro" href="https://www.biztech.ro/">
+<link rel="alternate" hreflang="en" href="https://www.biztech.ro/en/">
+<link rel="alternate" hreflang="sv" href="https://www.biztech.ro/sv/">
+<link rel="alternate" hreflang="fr" href="https://www.biztech.ro/fr/">
+<link rel="alternate" hreflang="de" href="https://www.biztech.ro/de/">
+<link rel="alternate" hreflang="x-default" href="https://www.biztech.ro/en/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dashboard Raportare Inteligentă + Analiză AI pentru Horeca | BIZTECH Consulting">
+<meta property="og:description" content="Toate datele afacerii dumneavoastră Horeca, într-un singur dashboard inteligent. Conectat la Breeze, ExpresSoft și Charisma. Primul dashboard în maximum 10 zile lucrătoare.">
+<meta property="og:image" content="https://www.biztech.ro/assets/img/hero-desktop.png">
+<meta property="og:locale" content="ro_RO">
+<meta name="theme-color" content="#1E1829">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   BIZTECH Consulting — one-page site (RO)
+   Paletă: documentul principal §3.5 · Dark implicit, Light prin comutator
+   ============================================================ */
+:root{
+  --bg:#1E1829; --bg-deep:#14101F; --surface:#2A2140; --surface-2:#332a4d; --border:#3B2F5C;
+  --text:#F5F3FA; --text-2:#B9B3CC;
+  --violet:#6B4CD8; --violet-hover:#5A3FC0; --violet-soft:#AD73E9;
+  --cyan:#61C0DE; --amber:#F2A35B; --teal:#2A9D8F; --red:#D62828; --brand-red:#F80F0F;
+  --wa:#25D366; --wa-hover:#1EBE5D; --wa-text:#062B16;
+  --shadow:0 12px 32px rgba(0,0,0,.38); --shadow-sm:0 4px 14px rgba(0,0,0,.28);
+  --radius:18px; --radius-sm:12px;
+  --font-head:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --font-body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:dark;
+}
+[data-theme="light"]{
+  --bg:#F7F6FB; --bg-deep:#EFECF6; --surface:#FFFFFF; --surface-2:#F1EEF8; --border:#E4E0EE;
+  --text:#1E1829; --text-2:#5C5470;
+  --violet:#5A3FC0; --violet-hover:#4B33A6; --violet-soft:#7A5CE0;
+  --cyan:#17789A; --amber:#B5651D; --teal:#1F7A6F;
+  --shadow:0 12px 32px rgba(30,24,41,.10); --shadow-sm:0 4px 14px rgba(30,24,41,.08);
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-body);font-size:17px;line-height:1.6;overflow-x:hidden}
+img,video{max-width:100%;height:auto;display:block}
+a{color:var(--cyan);text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4{font-family:var(--font-head);line-height:1.15;margin:0 0 .5em;letter-spacing:-.01em}
+h1{font-size:clamp(2rem,4vw,3.2rem);font-weight:800}
+h2{font-size:clamp(1.75rem,3.2vw,2.6rem);font-weight:800}
+h3{font-size:1.25rem;font-weight:700}
+p{margin:0 0 1em}
+strong{font-weight:600}
+.container{max-width:1180px;margin:0 auto;padding:0 24px}
+section{padding:96px 0}
+.section-alt{background:var(--bg-deep)}
+.eyebrow{display:inline-block;font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--violet-soft);margin-bottom:14px}
+.lead{font-size:1.15rem;color:var(--text-2);max-width:760px}
+.section-head{max-width:820px;margin-bottom:48px}
+.muted{color:var(--text-2)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.grad{background:linear-gradient(90deg,var(--violet-soft),var(--cyan));-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* ---------- Butoane ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 24px;border-radius:999px;font-weight:600;font-size:1rem;border:2px solid transparent;cursor:pointer;transition:transform .15s,background .15s,border-color .15s,box-shadow .15s;font-family:var(--font-body);line-height:1.2;text-decoration:none!important;white-space:nowrap}
+.btn:hover{transform:translateY(-1px)}
+.btn svg{width:20px;height:20px;flex:none}
+.wa-ico{width:22px;height:22px;flex:none;display:inline-block}
+.btn-sm .wa-ico{width:18px;height:18px}
+.btn-lg .wa-ico{width:24px;height:24px}
+.btn-wa{background:var(--wa);color:var(--wa-text);box-shadow:0 8px 24px rgba(37,211,102,.28)}
+.btn-wa:hover{background:var(--wa-hover)}
+.btn-violet{background:var(--violet);color:#fff}
+.btn-violet:hover{background:var(--violet-hover)}
+.btn-outline{background:transparent;color:var(--text);border-color:var(--border)}
+.btn-outline:hover{border-color:var(--violet-soft)}
+.btn-lg{padding:17px 30px;font-size:1.06rem}
+@media (max-width:640px){.btn-lg,.cta-row .btn,.cta-block .btn,.band .btn{white-space:normal;text-align:center;width:100%}.cta-row,.cta-block{flex-direction:column;align-items:stretch}}
+.btn-sm{padding:10px 16px;font-size:.92rem}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+.cta-block{margin-top:44px;display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+
+/* ---------- Header ---------- */
+.header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+.header .container{display:flex;align-items:center;gap:18px;height:74px;max-width:1320px}
+.logo{display:flex;align-items:center;flex:none}
+.logo img{height:38px;width:auto}
+.logo .logo-light{display:none}
+[data-theme="light"] .logo .logo-dark{display:none}
+[data-theme="light"] .logo .logo-light{display:block}
+.nav{display:flex;gap:4px;margin-left:8px}
+.nav a{color:var(--text-2);font-weight:500;font-size:.92rem;padding:8px 10px;border-radius:8px;text-decoration:none;white-space:nowrap}
+.nav a:hover,.nav a.active{color:var(--text);background:color-mix(in srgb,var(--violet) 18%,transparent)}
+.header-right{margin-left:auto;display:flex;align-items:center;gap:10px}
+.header-phone{display:flex;flex-direction:column;line-height:1.2;font-size:.8rem;color:var(--text-2);text-align:right;white-space:nowrap}
+.header-phone a{color:var(--text);font-weight:600;text-decoration:none}
+.icon-btn{width:42px;height:42px;border-radius:50%;border:1px solid var(--border);background:transparent;color:var(--text);display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.icon-btn svg{width:20px;height:20px}
+.icon-btn:hover{border-color:var(--violet-soft)}
+.burger{display:none}
+.theme-toggle .icon-sun{display:none}
+[data-theme="light"] .theme-toggle .icon-sun{display:block}
+[data-theme="light"] .theme-toggle .icon-moon{display:none}
+@media (max-width:1060px){
+  .nav{display:none}
+  .header-phone{display:none}
+  .burger{display:inline-flex}
+  .header.nav-open .nav{display:flex;position:absolute;left:0;right:0;top:74px;flex-direction:column;background:var(--bg);border-bottom:1px solid var(--border);padding:12px 24px 20px;gap:2px;box-shadow:var(--shadow)}
+  .header.nav-open .nav a{padding:12px 10px;font-size:1.05rem}
+}
+@media (max-width:640px){
+  .header .container{height:66px;gap:10px}
+  .logo img{height:32px}
+  .header-right .btn span{display:none}
+  .header-right .btn{padding:8px 10px}
+  .header-right .btn .wa-ico{width:24px;height:24px}
+  .lang summary{padding:5px 8px 5px 5px}.lang summary .code{display:none}
+}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;padding:0;color:#F5F3FA;background:#14101F;overflow:hidden;isolation:isolate}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;opacity:.95}
+.hero-overlay{position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(20,16,31,.86) 0%,rgba(20,16,31,.62) 55%,#1E1829 100%)}
+[data-theme="light"] .hero-overlay{background:linear-gradient(180deg,rgba(20,16,31,.86) 0%,rgba(20,16,31,.66) 55%,#F7F6FB 100%)}
+.hero .container{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center;padding-top:88px;padding-bottom:64px;min-height:calc(100vh - 74px)}
+.hero h1{margin-bottom:18px}
+.hero .product{font-family:var(--font-head);font-size:1.15rem;font-weight:700;color:#fff;margin:0 0 14px}
+.hero .product span{color:#AD73E9}
+.hero .lead{color:#D9D4E8;font-size:1.08rem;max-width:600px}
+.hero .cta-row{margin-top:14px}
+.hero .cta-demo{margin-top:26px}
+.btn-demo{background:#fff;color:#3A2390;box-shadow:0 8px 24px rgba(255,255,255,.12)}
+.btn-demo:hover{background:#EFEAFF}
+.hero-phones{margin-top:22px;font-size:.95rem;color:#D9D4E8}
+.hero-phones a{color:#fff;font-weight:600;text-decoration:none}
+.hero-phones .hours{display:block;margin-top:4px;color:#B9B3CC;font-size:.9rem}
+.quick-form{margin-top:26px;background:rgba(42,33,64,.66);border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:16px 18px;max-width:560px;backdrop-filter:blur(8px)}
+.quick-form label{display:block;font-size:.92rem;color:#E6E1F2;margin-bottom:10px}
+.quick-form .row{display:flex;gap:10px}
+@media (max-width:480px){.quick-form .row{flex-direction:column}.quick-form .btn{width:100%}}
+.quick-form input{flex:1;min-width:0;padding:12px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.18);background:rgba(20,16,31,.6);color:#fff;font-size:1rem;font-family:var(--font-body)}
+.quick-form input::placeholder{color:#8E86A6}
+.quick-form small{display:block;color:#9F98B4;margin-top:8px;font-size:.8rem}
+.hero-visual{position:relative;min-height:420px}
+.laptop{position:relative;border-radius:14px;background:#0E0B16;padding:10px 10px 0;box-shadow:0 30px 60px rgba(0,0,0,.55),0 0 0 1px rgba(255,255,255,.08);transform:perspective(1200px) rotateY(-8deg) rotateX(2deg)}
+.laptop img{border-radius:8px 8px 0 0;width:100%;height:auto}
+.laptop::after{content:"";display:block;height:14px;background:linear-gradient(#1B1626,#0E0B16);border-radius:0 0 12px 12px;margin:0 -10px}
+.phone{position:absolute;left:-18px;bottom:-26px;width:27%;max-width:170px;border-radius:26px;background:#0E0B16;padding:8px;box-shadow:0 26px 50px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.1)}
+.phone img{border-radius:20px;width:100%}
+@media (max-width:980px){
+  .hero .container{grid-template-columns:1fr;padding-top:56px;padding-bottom:56px;min-height:0}
+  .hero-visual{min-height:0;margin-top:24px;padding-bottom:36px;padding-left:12px}
+  .laptop{transform:none}
+  .phone{width:24%;left:-4px;bottom:-14px}
+}
+
+/* ---------- Bară de încredere ---------- */
+.trust{background:var(--bg-deep);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:26px 0}
+.trust .container{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.trust-item{display:flex;gap:12px;align-items:flex-start;font-size:.95rem;color:var(--text-2)}
+.trust-item strong{color:var(--text);display:block}
+.trust-item svg{width:24px;height:24px;flex:none;color:var(--violet-soft);margin-top:2px}
+@media (max-width:900px){.trust .container{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.trust .container{grid-template-columns:1fr}}
+
+/* ---------- Carduri generice ---------- */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:28px;box-shadow:var(--shadow-sm)}
+.grid{display:grid;gap:22px}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+.grid-3{grid-template-columns:repeat(3,1fr)}
+@media (max-width:900px){.grid-2,.grid-3{grid-template-columns:1fr}}
+
+/* ---------- Puncte de durere ---------- */
+.pain-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:22px}
+.pain-grid .card{grid-column:span 2}
+.pain-grid .card:nth-child(4){grid-column:2/span 2}
+.pain-num{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:12px;background:color-mix(in srgb,var(--red) 18%,transparent);color:#FF6B6B;font-family:var(--font-head);font-weight:800;margin-bottom:16px}
+[data-theme="light"] .pain-num{color:var(--red)}
+.pain-grid h3{font-size:1.18rem;margin-bottom:10px}
+.pain-grid p{color:var(--text-2);margin:0}
+.closing{margin-top:34px;font-size:1.15rem;font-weight:600;max-width:760px}
+@media (max-width:980px){.pain-grid{grid-template-columns:1fr 1fr}.pain-grid .card,.pain-grid .card:nth-child(4){grid-column:auto}}
+@media (max-width:620px){.pain-grid{grid-template-columns:1fr}}
+
+/* ---------- Beneficii ---------- */
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding:36px 0}
+.feature+.feature{border-top:1px solid var(--border)}
+.feature:nth-child(even) .feature-media{order:-1}
+.feature h3{font-size:1.45rem}
+.feature p{color:var(--text-2)}
+.proof{display:inline-block;margin-top:8px;line-height:1.5;padding:10px 16px;border-radius:12px;background:color-mix(in srgb,var(--amber) 16%,transparent);border:1px solid color-mix(in srgb,var(--amber) 40%,transparent);color:var(--text);font-size:.95rem}
+.proof b{color:var(--amber);font-family:var(--font-head);font-size:1.05rem}
+.feature-media{border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);box-shadow:var(--shadow);background:#0E0B16;aspect-ratio:16/10}
+.feature-media img{width:100%;height:100%;object-fit:cover;object-position:top}
+.band{margin-top:40px;background:linear-gradient(135deg,var(--violet) 0%,#4A2FB0 60%,#3A2390 100%);color:#fff;border-radius:var(--radius);padding:40px;display:grid;grid-template-columns:1.3fr .7fr;gap:32px;align-items:center;box-shadow:var(--shadow)}
+.band h3{color:#fff;font-size:1.6rem}
+.band p{color:#E9E4F7}
+.band .big{font-family:var(--font-head);font-size:3.4rem;font-weight:800;line-height:1;color:#fff}
+.band .big small{display:block;font-size:1rem;font-weight:600;color:#E9E4F7;margin-top:6px}
+@media (max-width:900px){.feature{grid-template-columns:1fr;gap:24px}.feature:nth-child(even) .feature-media{order:0}.band{grid-template-columns:1fr}}
+
+/* ---------- Demo ---------- */
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0 26px}
+.chip{padding:8px 14px;border-radius:999px;border:1px solid var(--border);background:var(--surface);font-size:.9rem;color:var(--text)}
+.chip b{color:var(--cyan)}
+.carousel-wrap{position:relative}
+.carousel{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 6px 18px;scrollbar-width:none;-webkit-overflow-scrolling:touch;touch-action:pan-x pan-y;overscroll-behavior-x:contain;cursor:grab}
+.carousel::-webkit-scrollbar{display:none}
+.slide{flex:0 0 68%;scroll-snap-align:start;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm)}
+.slide .shot{aspect-ratio:16/10;overflow:hidden;background:#0E0B16}
+.slide .shot img{width:100%;height:100%;object-fit:cover;object-position:top}
+.slide figcaption{padding:14px 18px;font-size:.95rem;color:var(--text-2)}
+.slide figcaption b{color:var(--text)}
+.car-btn{position:absolute;top:40%;transform:translateY(-50%);width:46px;height:46px;border-radius:50%;background:var(--surface);border:1px solid var(--border);color:var(--text);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;box-shadow:var(--shadow-sm);z-index:2}
+.car-btn svg{width:20px;height:20px}
+.car-btn.prev{left:-12px}.car-btn.next{right:-12px}
+.dots{display:flex;justify-content:center;gap:8px;margin-top:4px}
+.dots button{width:10px;height:10px;border-radius:50%;border:0;background:var(--border);cursor:pointer;padding:0;transition:transform .15s,background .15s}
+.dots button.on{background:var(--violet-soft);transform:scale(1.25)}
+@media (max-width:720px){.slide{flex-basis:calc(100% - 12px)}.carousel{gap:12px;padding:6px 6px 14px}.car-btn{width:40px;height:40px;top:36%}.car-btn.prev{left:4px}.car-btn.next{right:4px}.car-btn svg{width:18px;height:18px}}
+
+/* ---------- Servicii ---------- */
+.service{position:relative}
+.service .tag{position:absolute;top:22px;right:22px;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:5px 10px;border-radius:999px;background:color-mix(in srgb,var(--violet) 22%,transparent);color:var(--violet-soft)}
+.service .ico{width:52px;height:52px;border-radius:14px;display:inline-flex;align-items:center;justify-content:center;background:color-mix(in srgb,var(--violet) 18%,transparent);color:var(--violet-soft);margin-bottom:18px}
+.service .ico svg{width:26px;height:26px}
+.service h3{font-size:1.3rem}
+.service p{color:var(--text-2);margin-bottom:8px}
+.service a.more{font-weight:600}
+
+/* ---------- Cum lucrăm ---------- */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:step}
+.step{position:relative;padding:28px 28px 28px 28px}
+.step .n{font-family:var(--font-head);font-weight:800;font-size:2.2rem;color:var(--violet-soft);line-height:1;margin-bottom:12px}
+.step h3{font-size:1.15rem}
+.step p{color:var(--text-2);margin:0}
+.boxes{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:22px}
+.box{border-radius:var(--radius);padding:24px 28px;display:flex;gap:16px;align-items:flex-start}
+.box svg{width:28px;height:28px;flex:none;margin-top:2px}
+.box-teal{background:color-mix(in srgb,var(--teal) 16%,transparent);border:1px solid color-mix(in srgb,var(--teal) 45%,transparent)}
+.box-teal svg{color:var(--teal)}
+.box-violet{background:color-mix(in srgb,var(--violet) 16%,transparent);border:1px solid color-mix(in srgb,var(--violet) 45%,transparent)}
+.box-violet svg{color:var(--violet-soft)}
+.box strong{display:block;margin-bottom:4px}
+.box span{color:var(--text-2);font-size:.97rem}
+@media (max-width:900px){.steps{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.steps{grid-template-columns:1fr}.boxes{grid-template-columns:1fr}}
+
+/* ---------- Despre mine ---------- */
+.about{display:grid;grid-template-columns:320px 1fr;gap:56px;align-items:start}
+.person+.person{margin-top:56px;padding-top:56px;border-top:1px solid var(--border)}
+.person-name{font-size:1.6rem;margin-bottom:4px}
+.person-role{color:var(--text-2);font-weight:500;margin-bottom:18px}
+.portrait{position:sticky;top:100px}
+.portrait img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:28px;border:1px solid var(--border);box-shadow:var(--shadow)}
+.portrait .name{margin-top:18px;font-family:var(--font-head);font-weight:800;font-size:1.35rem}
+.portrait .role{color:var(--text-2);font-size:.95rem}
+.portrait .li{display:inline-flex;align-items:center;gap:8px;margin-top:12px;font-weight:600}
+.portrait .li svg{width:18px;height:18px}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:26px 0}
+.fact{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:16px;text-align:center}
+.fact b{display:block;font-family:var(--font-head);font-size:1.35rem;color:var(--violet-soft)}
+.fact span{font-size:.85rem;color:var(--text-2)}
+.timeline{list-style:none;padding:0;margin:0 0 20px}
+.timeline li{position:relative;padding-left:28px;margin-bottom:14px;color:var(--text-2)}
+.timeline li::before{content:"";position:absolute;left:0;top:.55em;width:12px;height:12px;border-radius:50%;background:var(--violet-soft);box-shadow:0 0 0 4px color-mix(in srgb,var(--violet) 25%,transparent)}
+.timeline li b{color:var(--text)}
+@media (max-width:900px){.about{grid-template-columns:1fr}.portrait{position:static;max-width:320px}.facts{grid-template-columns:1fr 1fr}.fact b{font-size:1.15rem}}
+
+/* ---------- Portofoliu ---------- */
+.case{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
+.delivered{columns:2;column-gap:28px;padding-left:20px;margin:0 0 20px;color:var(--text-2)}
+.delivered li{break-inside:avoid;margin-bottom:8px}
+.results{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:22px}
+.result{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:18px}
+.result b{display:block;font-family:var(--font-head);font-size:1.5rem;color:var(--amber);line-height:1.1}
+.result span{font-size:.9rem;color:var(--text-2)}
+.testimonial{background:var(--surface);border:1px solid var(--border);border-left:4px solid var(--violet-soft);border-radius:var(--radius);padding:26px 28px}
+.testimonial .quote{font-size:1.12rem;font-style:italic;margin:0 0 14px}
+.testimonial details{margin-top:6px}
+.testimonial summary{cursor:pointer;font-weight:600;color:var(--cyan);list-style:none}
+.testimonial summary::-webkit-details-marker{display:none}
+.testimonial details[open] summary{margin-bottom:10px}
+.testimonial details p{color:var(--text-2);font-size:.98rem}
+.testimonial .who{margin-top:14px;display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap}
+.testimonial .who b{display:block}
+.testimonial .who span{color:var(--text-2);font-size:.9rem}
+@media (max-width:900px){.case{grid-template-columns:1fr}.delivered{columns:1}}
+
+/* ---------- FAQ ---------- */
+.faq{max-width:860px}
+.faq details{border:1px solid var(--border);border-radius:var(--radius-sm);background:var(--surface);margin-bottom:12px;padding:0 22px}
+.faq summary{cursor:pointer;padding:18px 0;font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:1.5rem;color:var(--violet-soft);flex:none;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq details p{color:var(--text-2);margin:0 0 18px}
+
+/* ---------- Contact ---------- */
+.channels{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:40px}
+.channel{display:flex;flex-direction:column;gap:8px;padding:22px;border-radius:var(--radius);border:1px solid var(--border);background:var(--surface);text-decoration:none!important;color:var(--text);transition:transform .15s,border-color .15s}
+.channel:hover{transform:translateY(-2px);border-color:var(--violet-soft)}
+.channel svg{width:28px;height:28px;color:var(--violet-soft)}
+.channel .wa-ico{width:36px;height:36px}
+.channel b{font-family:var(--font-head);font-size:1.08rem}
+.channel span{color:var(--text-2);font-size:.92rem}
+.channel.wa{background:var(--wa);border-color:var(--wa);color:var(--wa-text)}
+.channel.wa svg,.channel.wa span{color:var(--wa-text)}
+.contact-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:start}
+.form{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:30px}
+.form .fields{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form .full{grid-column:1/-1}
+.form label{display:block;font-size:.88rem;font-weight:600;margin-bottom:6px;color:var(--text-2)}
+.form input,.form select,.form textarea{width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--border);background:var(--bg);color:var(--text);font-size:1rem;font-family:var(--font-body)}
+.form textarea{min-height:110px;resize:vertical}
+.form input:focus,.form select:focus,.form textarea:focus{outline:2px solid var(--violet-soft);outline-offset:1px}
+.consent{display:flex;gap:10px;align-items:flex-start;font-size:.9rem;color:var(--text-2);margin:16px 0 20px}
+.consent input{width:auto;margin-top:4px}
+.form .actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;opacity:0;pointer-events:none}
+.form-msg{margin-top:14px;font-size:.95rem;display:none}
+.form-msg.ok{display:block;color:var(--teal)}
+.form-msg.err{display:block;color:#FF6B6B}
+.company{font-size:.97rem;color:var(--text-2)}
+.company b{color:var(--text);display:block;font-family:var(--font-head);font-size:1.1rem;margin-bottom:8px}
+.company a{color:var(--text)}
+.hours-box{margin-top:18px;padding:16px 18px;border-radius:var(--radius-sm);background:color-mix(in srgb,var(--teal) 14%,transparent);border:1px solid color-mix(in srgb,var(--teal) 40%,transparent);font-size:.95rem}
+@media (max-width:980px){.channels{grid-template-columns:1fr 1fr}.contact-grid{grid-template-columns:1fr}}
+@media (max-width:560px){.channels{grid-template-columns:1fr}.form .fields{grid-template-columns:1fr}}
+
+/* ---------- Footer ---------- */
+.footer{background:var(--bg-deep);border-top:1px solid var(--border);padding:40px 0 120px;font-size:.9rem;color:var(--text-2)}
+.footer .container{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px}
+.footer a{color:var(--text-2)}
+.footer .legal{font-size:.82rem;line-height:1.7}
+.footer ul{list-style:none;padding:0;margin:0}
+.footer li{margin-bottom:8px}
+.footer h4{font-size:.85rem;text-transform:uppercase;letter-spacing:.1em;color:var(--text);margin-bottom:12px}
+.copy{margin-top:22px;grid-column:1/-1;border-top:1px solid var(--border);padding-top:18px;font-size:.82rem}
+@media (max-width:800px){.footer .container{grid-template-columns:1fr}.footer{padding-bottom:110px}}
+@media (min-width:769px){.footer{padding-bottom:56px}}
+
+/* ---------- WhatsApp lipicios + bară mobil ---------- */
+.fab{position:fixed;right:24px;bottom:24px;z-index:60;display:flex;align-items:center;gap:10px}
+.fab-btn{width:66px;height:66px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;transition:transform .15s;filter:drop-shadow(0 10px 22px rgba(37,211,102,.45))}
+.fab-btn:hover{transform:scale(1.06)}
+.fab-btn .wa-ico{width:66px;height:66px}
+.fab-label{background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:999px;padding:10px 14px;font-size:.9rem;font-weight:600;box-shadow:var(--shadow-sm);display:none}
+.fab:hover .fab-label{display:block}
+.bubble{position:fixed;right:24px;bottom:96px;z-index:60;max-width:300px;background:var(--surface);color:var(--text);border:1px solid var(--border);border-radius:16px;padding:14px 16px;box-shadow:var(--shadow);font-size:.93rem;display:none}
+.bubble.show{display:block;animation:pop .25s ease-out}
+.bubble .x{position:absolute;top:6px;right:8px;background:none;border:0;color:var(--text-2);font-size:1.1rem;cursor:pointer}
+.bubble .btn{margin-top:10px}
+@keyframes pop{from{transform:translateY(8px);opacity:0}to{transform:none;opacity:1}}
+.mobile-bar{display:none}
+@media (max-width:768px){
+  .fab{display:none}
+  .bubble{bottom:84px;right:16px;left:16px;max-width:none}
+  .mobile-bar{display:grid;grid-template-columns:2fr 1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:55;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(12px);border-top:1px solid var(--border)}
+  .mobile-bar .btn{padding:12px 8px;font-size:.9rem;border-radius:12px}
+  .fab .fab-label{display:none!important}
+}
+
+/* ---------- Cookie ---------- */
+.cookie{position:fixed;left:24px;bottom:24px;z-index:70;max-width:420px;background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:18px 20px;box-shadow:var(--shadow);font-size:.92rem;display:none}
+.cookie.show{display:block}
+.cookie p{margin:0 0 12px}
+.cookie .actions{display:flex;gap:8px;flex-wrap:wrap}
+@media (max-width:768px){.cookie{left:12px;right:12px;bottom:84px;max-width:none}}
+
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover,.channel:hover,.fab-btn:hover{transform:none}}
+
+/* ---------- Selector de limbă cu steaguri ---------- */
+.lang{position:relative;padding:0;border:0}
+.lang summary{list-style:none;display:inline-flex;align-items:center;gap:7px;border:1px solid var(--border);border-radius:999px;padding:6px 12px 6px 6px;font-size:.85rem;font-weight:600;color:var(--text);cursor:pointer;background:transparent}
+.lang summary::-webkit-details-marker{display:none}
+.lang summary:hover{border-color:var(--violet-soft)}
+.flag{width:24px;height:24px;border-radius:50%;object-fit:cover;flex:none;display:inline-block;box-shadow:0 0 0 1px rgba(0,0,0,.15)}
+.lang-menu{position:absolute;right:0;top:calc(100% + 8px);min-width:190px;background:var(--surface);border:1px solid var(--border);border-radius:14px;box-shadow:var(--shadow);padding:6px;z-index:70}
+.lang-menu a{display:flex;align-items:center;gap:10px;padding:9px 10px;border-radius:9px;color:var(--text);text-decoration:none;font-size:.95rem}
+.lang-menu a:hover{background:color-mix(in srgb,var(--violet) 18%,transparent)}
+.lang-menu a.on{font-weight:700;color:var(--violet-soft)}
+.lang-menu a .code{margin-left:auto;font-size:.78rem;color:var(--text-2);font-weight:600}
+.footer .langs a{display:inline-flex;align-items:center;gap:8px;opacity:1;pointer-events:auto}
+.footer .langs a.on{color:var(--text);font-weight:600}
+.footer .langs .flag{width:20px;height:20px}
+.header.nav-open .lang{display:inline-block}
+</style>
+</head>
+<body>
+<!-- ===== Icoane (SVG sprite, desene generice) ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1.1-4.6A8 8 0 1 1 21 12z"/><path d="M8.5 10.5c.3 2 2 3.7 4 4l1.4-1.4-1.7-.9-.8.8c-.6-.3-1.1-.8-1.4-1.4l.8-.8-.9-1.7-1.4 1.4z"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-video" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+  <symbol id="i-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></symbol>
+  <symbol id="i-plug" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3v5M15 3v5M6 8h12v3a6 6 0 0 1-12 0z"/><path d="M12 17v4"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 14L7 22l5-3 5 3-1.5-8"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M9 12l2 2 4-4"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></symbol>
+  <symbol id="i-board" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 9h8M8 13h5M8 17h3"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+</svg>
+
+<!-- ===== Header ===== -->
+<header class="header" id="top">
+  <div class="container">
+    <a class="logo" href="#acasa" aria-label="BIZTECH Consulting — acasă">
+      <img class="logo-dark" src="assets/logo-dark.svg" alt="BIZTECH Consulting" width="220" height="76">
+      <img class="logo-light" src="assets/logo-light.svg" alt="BIZTECH Consulting" width="220" height="76">
+    </a>
+    <nav class="nav" aria-label="Meniu principal">
+      <a href="#acasa">Acasă</a>
+      <a href="#modul-raportare">Modul de raportare</a>
+      <a href="#servicii">Servicii</a>
+      <a href="#cum-lucram">Cum lucrăm</a>
+      <a href="#despre">Despre</a>
+      <a href="#portofoliu">Portofoliu</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="header-right">
+      <div class="header-phone"><a href="tel:+40772295031" data-track="cta_tel_ro">+40 772 295 031</a><a href="tel:+46720123475" data-track="cta_tel_se">+46 720 123 475</a></div>
+      <details class="lang">
+        <summary title="Limbă" aria-label="Limbă"><img class="flag" src="assets/flags/ro.svg" alt=""><span class="code">RO</span></summary>
+        <div class="lang-menu"><a href="index.html" hreflang="ro" lang="ro" class="on"><img class="flag" src="assets/flags/ro.svg" alt="">Română<span class="code">RO</span></a><a href="en/index.html" hreflang="en" lang="en"><img class="flag" src="assets/flags/en.svg" alt="">English<span class="code">EN</span></a><a href="sv/index.html" hreflang="sv" lang="sv"><img class="flag" src="assets/flags/sv.svg" alt="">Svenska<span class="code">SV</span></a><a href="fr/index.html" hreflang="fr" lang="fr"><img class="flag" src="assets/flags/fr.svg" alt="">Français<span class="code">FR</span></a><a href="de/index.html" hreflang="de" lang="de"><img class="flag" src="assets/flags/de.svg" alt="">Deutsch<span class="code">DE</span></a></div>
+      </details>
+      <button class="icon-btn theme-toggle" type="button" aria-label="Comută tema light / dark">
+        <svg class="icon-moon"><use href="#i-moon"/></svg>
+        <svg class="icon-sun"><use href="#i-sun"/></svg>
+      </button>
+      <a class="btn btn-wa btn-sm" href="#" data-wa="general" data-track="cta_whatsapp_header"><img class="wa-ico" src="assets/whatsapp.png" alt="" width="256" height="256"><span>WhatsApp</span></a>
+      <button class="icon-btn burger" type="button" aria-label="Deschide meniul" aria-expanded="false"><svg><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ===== 1. Hero ===== -->
+<section class="hero" id="acasa">
+  <video class="hero-video" autoplay muted loop playsinline poster="assets/hero-poster.jpg" aria-hidden="true">
+    <source src="assets/hero-bg.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="container">
+    <div class="hero-text">
+      <span class="eyebrow">BIZTECH CONSULTING · Business &amp; Technology</span>
+      <h1>Toate datele afacerii dumneavoastră Horeca, într-un singur <span class="grad">dashboard inteligent</span>.</h1>
+      <p class="product"><span>Dashboard Raportare Inteligentă + Analiză AI</span> — conectat direct la Breeze (BITSOFT), ExpresSoft (Expressoft Technology) și Charisma ERP &amp; HCM (TotalSoft).</p>
+      <p class="lead">Proiectăm, construim și administrăm platforme inteligente și sisteme AI personalizate pentru companii din Horeca &amp; Hospitality din România și Suedia. Conectăm informațiile și fluxurile de date din sistemele pe care le folosiți deja și vă livrăm un modul de raportare adaptat nevoilor dumneavoastră, ca să vedeți dintr-o privire unde puteți eficientiza operațiunile și fluxurile de lucru.</p>
+      <div class="cta-row cta-demo">
+        <a class="btn btn-demo btn-lg" href="https://smart-ai-dashboard.vercel.app/" target="_blank" rel="noopener" data-track="cta_demo_hero"><svg><use href="#i-ext"/></svg>Deschideți demo-ul live — fără cont</a>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-wa btn-lg" href="#" data-wa="general" data-track="cta_whatsapp_hero"><img class="wa-ico" src="assets/whatsapp.png" alt="" width="256" height="256">Scrieți-ne pe WhatsApp</a>
+        <a class="btn btn-violet btn-lg" href="https://calendar.app.google/CpjHNeDtCuGkzk4h8" target="_blank" rel="noopener" data-track="cta_meet_hero"><svg><use href="#i-video"/></svg>Programați un apel video de 30 de minute</a>
+      </div>
+      <p class="hero-phones">Sau sunați direct: <a href="tel:+40772295031">+40 772 295 031</a> (România) · <a href="tel:+46720123475">+46 720 123 475</a> (Suedia)
+        <span class="hours">Program: Luni–Duminică, 09:00–18:00 · Urgențe: 24/7</span></p>
+      <form class="quick-form" id="quick-form" novalidate>
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label for="quick-email">Lăsați adresa de email și primiți în maximum 24 de ore studiul de caz și prezentarea detaliată a modulului.</label>
+        <div class="row">
+          <input type="email" id="quick-email" name="email" placeholder="Adresa dumneavoastră de email" required autocomplete="email">
+          <button class="btn btn-violet" type="submit">Trimiteți</button>
+        </div>
+        <small>Fără spam. Un singur email, cu materialele promise.</small>
+        <div class="form-msg" id="quick-msg" role="status"></div>
+      </form>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="laptop"><img src="assets/img/hero-desktop.png" alt="" width="1440" height="900" loading="eager"></div>
+      <div class="phone"><img src="assets/img/hero-mobile.png" alt="" width="390" height="844"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Bara de încredere ===== -->
+<div class="trust" aria-label="Argumente de încredere">
+  <div class="container">
+    <div class="trust-item"><svg><use href="#i-plug"/></svg><div><strong>Breeze · ExpresSoft · Charisma ERP &amp; HCM</strong>Integrat cu sistemele pe care le folosiți deja</div></div>
+    <div class="trust-item"><svg><use href="#i-award"/></svg><div><strong>15+ ani în IT</strong>Experiență la Nokia, Microsoft, Volkswagen</div></div>
+    <div class="trust-item"><svg><use href="#i-clock"/></svg><div><strong>Maximum 10 zile lucrătoare</strong>De la contract la primul dashboard</div></div>
+    <div class="trust-item"><svg><use href="#i-pin"/></svg><div><strong>România și Suedia</strong>Prezent frecvent în ambele țări</div></div>
+  </div>
+</div>
+
+<!-- ===== 2. Puncte de durere ===== -->
+<section id="probleme">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Situații reale din operațiuni Horeca</span>
+      <h2>Vă recunoașteți în una dintre situațiile de mai jos?</h2>
+      <p class="lead">Cinci probleme pe care le întâlnim în aproape fiecare operațiune Horeca. Datele există în sistem. Deciziile întârzie.</p>
+    </div>
+    <div class="pain-grid">
+      <article class="card"><div class="pain-num">01</div><h3>Aveți 30 de rapoarte în Breeze. Și nicio decizie.</h3><p>Sumar, KPI, RVC, KDS, Livrare, Pontaj — fiecare în alt PDF, nimeni nu le pune cap la cap. Problemele se văd la 2–3 luni după ce au apărut.</p></article>
+      <article class="card"><div class="pain-num">02</div><h3>Pierdeți bani pe retururi și nu știți cine le aprobă.</h3><p>Într-o operațiune reală: 239.000 lei retururi într-un an, două treimi autorizate de o singură persoană. Nimeni nu se uitase.</p></article>
+      <article class="card"><div class="pain-num">03</div><h3>Bucătăria întârzie și nu știți care stație.</h3><p>KDS vă arată comenzile în timp real, dar nu vă spune că 60% din pizza iese peste timp. Clienții simt asta înaintea dumneavoastră.</p></article>
+      <article class="card"><div class="pain-num">04</div><h3>Comenzile scad de la an la an și nimeni nu trage semnalul.</h3><p>−7,2% comenzi față de anul trecut înseamnă 16.400 de comenzi pierdute. Fără comparație an/an pe fiecare lună, se vede abia când este târziu.</p></article>
+      <article class="card"><div class="pain-num">05</div><h3>Programul de fidelitate: aduce bani sau îi consumă?</h3><p>Puncte acordate, consumate, expirate, alimentate manual — în rapoarte separate. Soldul de puncte este o datorie care crește (+23% într-o lună) fără să o vedeți.</p></article>
+    </div>
+    <p class="closing">Toate aceste date există deja în sistemele dumneavoastră. Lipsește doar pagina care le pune cap la cap.</p>
+    <div class="cta-row">
+      <a class="btn btn-wa btn-lg" href="#" data-wa="demo" data-track="cta_whatsapp_probleme"><img class="wa-ico" src="assets/whatsapp.png" alt="" width="256" height="256">Vreau să văd cum arată pe datele mele</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 3. Beneficii ===== -->
+<section id="modul-raportare" class="section-alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Dashboard Raportare Inteligentă + Analiză AI</span>
+      <h2>De la 30 de rapoarte la o singură pagină de decizii</h2>
+      <p class="lead">Ce obțineți în primele 10 zile lucrătoare — și în fiecare lună după aceea.</p>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <h3>Tot business-ul într-o pagină, în 5 minute pe lună</h3>
+        <p>Sumar executiv cu 5 indicatori-cheie și semafoare verde / galben / roșu, direct de pe telefon. Restul detaliilor sunt acolo când doriți să aprofundați.</p>
+        <div class="proof"><b>4 locații · 163.000 comenzi · 7 centre de profit</b> — citite în 5 minute</div>
+      </div>
+      <div class="feature-media"><img src="assets/img/hero-desktop.png" alt="Sumar executiv cu indicatori și semafoare" loading="lazy" width="1440" height="900"></div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <h3>Găsiți banii pe care îi pierdeți acum fără să știți</h3>
+        <p>Retururi pe persoană și pe produs, blocaje pe stație KDS, zone de livrare slabe, anomalii, lipsuri din gestiune — toate scoase la suprafață, automat.</p>
+        <div class="proof"><b>Retururi reduse de la 3,4% la 1,25%</b> după ce anomalia a fost expusă</div>
+      </div>
+      <div class="feature-media"><img src="assets/img/beneficiu-pierderi.png" alt="Secțiunea Calitate și pierderi din dashboard" loading="lazy" width="1440" height="900"></div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <h3>Vedeți tendința înainte să devină problemă</h3>
+        <p>Comparație an/an pe fiecare lună, Δ% lună-la-lună, zile record și zile slabe, weekend vs. săptămână — într-un set complet de grafice care vă ajută să decideți.</p>
+        <div class="proof"><b>+4,8% an/an</b> identificat din prima lună</div>
+      </div>
+      <div class="feature-media"><img src="assets/img/beneficiu-tendinte.png" alt="Tendințe și sezonalitate, comparație an/an" loading="lazy" width="1440" height="900"></div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <h3>Concluzii și recomandări generate de modele avansate de inteligență artificială</h3>
+        <p>Puncte forte, puncte de îmbunătățit și recomandări prioritizate după impact și efort, scrise în limbaj de business, direct pe datele dumneavoastră. Un plan de acțiune gata pentru ședința de management.</p>
+        <div class="proof"><b>15 recomandări prioritizate</b> dintr-o singură analiză</div>
+      </div>
+      <div class="feature-media"><img src="assets/img/beneficiu-concluzii.png" alt="Concluzii și recomandări generate automat" loading="lazy" width="1440" height="900"></div>
+    </div>
+
+    <div class="band">
+      <div>
+        <h3>Rezultate în 10 zile lucrătoare, nu în 6 luni</h3>
+        <p>De la semnarea contractului de colaborare până la primul dashboard AI cu constatările despre firma dumneavoastră trec maximum 10 zile lucrătoare: audit pe ultimele luni, dashboard privat cu login, interfață modernă și responsive.</p>
+        <div class="cta-row">
+          <a class="btn btn-lg" style="background:#fff;color:#3A2390" href="mailto:contact@biztech.ro?subject=Solicitare%20studiu%20de%20caz%20%E2%80%94%20Dashboard%20Raportare%20Inteligent%C4%83%20%2B%20Analiz%C4%83%20AI" data-track="cta_email_beneficii"><svg><use href="#i-mail"/></svg>Primiți studiul de caz complet în 24 de ore</a>
+          <a class="btn btn-wa btn-lg" href="#" data-wa="general" data-track="cta_whatsapp_beneficii"><img class="wa-ico" src="assets/whatsapp.png" alt="" width="256" height="256">Sau întrebați-ne pe WhatsApp</a>
+        </div>
+      </div>
+      <div class="big">10<small>zile lucrătoare — termen garantat în contract</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4. Demo ===== -->
+<section id="demo">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Demo</span>
+      <h2>Vedeți modulul în acțiune</h2>
+      <p class="lead">Demo construit pe date fictive, pentru un restaurant imaginar. Navigați liber, fără cont.</p>
+    </div>
+    <h3>Modul de raportare Food Delivery — Breeze &amp; Charisma</h3>
+    <p class="muted" style="max-width:860px">Sumar executiv, indicatori cu semafoare, comparație an/an, retururi pe persoană și produs, performanța bucătăriei (KDS), zone de livrare, program de fidelitate și recomandări AI — pentru o operațiune de food delivery cu 4 locații și 7 centre de profit. Explicații la fiecare cifră, selector de perioadă (an / lună / săptămână / interval), interfață responsive pe laptop, tabletă și telefon.</p>
+    <div class="chips" aria-label="Limbi și monede disponibile în demo">
+      <span class="chip"><b>5 limbi</b> · română, engleză, suedeză, franceză, germană</span>
+      <span class="chip"><b>3 monede</b> · lei, euro, coroane suedeze</span>
+      <span class="chip"><b>Fără cont</b> · se deschide direct în browser</span>
+    </div>
+    <div class="carousel-wrap">
+      <button class="car-btn prev" type="button" aria-label="Imaginea anterioară"><svg><use href="#i-left"/></svg></button>
+      <div class="carousel" id="carousel">
+        <figure class="slide"><div class="shot"><img src="assets/img/demo-cum-functioneaza.png" alt="Cum funcționează modulul" loading="lazy"></div><figcaption><b>Cum funcționează</b> — de la datele din Breeze și Charisma la concluzii</figcaption></figure>
+        <figure class="slide"><div class="shot"><img src="assets/img/demo-kds.png" alt="Bucătărie / KDS — timpi pe stații" loading="lazy"></div><figcaption><b>Bucătărie / KDS</b> — care stație întârzie și cât</figcaption></figure>
+        <figure class="slide"><div class="shot"><img src="assets/img/demo-livrare.png" alt="Livrare — zone și punctualitate" loading="lazy"></div><figcaption><b>Livrare</b> — zone, șoferi, comenzi la timp</figcaption></figure>
+        <figure class="slide"><div class="shot"><img src="assets/img/demo-fidelizare.png" alt="Plan de fidelizare și ROI" loading="lazy"></div><figcaption><b>Fidelizare · ROI</b> — aduce bani sau îi consumă?</figcaption></figure>
+        <figure class="slide"><div class="shot"><img src="assets/img/demo-tableta.png" alt="Sumar executiv pe tabletă" loading="lazy"></div><figcaption><b>Responsive</b> — laptop, tabletă și telefon</figcaption></figure>
+      </div>
+      <button class="car-btn next" type="button" aria-label="Imaginea următoare"><svg><use href="#i-right"/></svg></button>
+    </div>
+    <div class="dots" id="dots" aria-label="Alegeți imaginea"></div>
+    <div class="cta-row" style="margin-top:22px">
+      <a class="btn btn-violet btn-lg" href="https://smart-ai-dashboard.vercel.app/" target="_blank" rel="noopener" data-track="cta_demo"><svg><use href="#i-ext"/></svg>Deschideți demo-ul</a>
+      <a class="btn btn-wa btn-lg" href="#" data-wa="demo" data-track="cta_whatsapp_demo"><img class="wa-ico" src="assets/whatsapp.png" alt="" width="256" height="256">Solicitați un demo pe datele dumneavoastră</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 5. Produse & servicii ===== -->
+<section id="servicii" class="section-alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Produse &amp; servicii</span>
+      <h2>Cum vă pot ajuta?</h2>
+    </div>
+    <div class="grid grid-2">
+      <article class="card service">
+        <span class="tag">Produs</span>
+        <div class="ico"><svg><use href="#i-chart"/></svg></div>
+        <h3>Dashboard-uri AI inteligente</h3>
+        <p><strong>Dashboard Raportare Inteligentă + Analiză AI</strong> — conectat la Breeze (POS), ExpresSoft (POS) și Charisma (ERP &amp; HCM), oferind analize generate de AI și recomandări acționabile.</p>
+        <a class="more" href="#demo">Vedeți demo-ul →</a>
+      </article>
+      <article class="card service">
+        <div class="ico"><svg><use href="#i-board"/></svg></div>
+        <h3>Management de proiect</h3>
+        <p>Doriți să implementați o soluție tehnică (POS, ERP, CRM, HCM sau flotă auto) sau să înlocuiți un sistem existent cu unul mai eficient, dar nu aveți pe nimeni în echipă care să gestioneze complexitatea? Preiau rolul de manager de proiect de la A la Z — cerințe, selecția furnizorilor, planificare, coordonare tehnică și rafinarea soluției.</p>
+      </article>
+      <article class="card service">
+        <div class="ico"><svg><use href="#i-target"/></svg></div>
+        <h3>Consultanță IT &amp; strategie AI</h3>
+        <p>Auditez infrastructura IT existentă, procesele și fluxurile de lucru, identific și clasific cazurile de utilizare cu ROI ridicat și reproiectez operațiunile de bază pentru eficiență maximă — în vederea creșterii vânzărilor și a optimizării performanței. Pentru companii și pentru administrații publice care accesează fonduri prin #DigiLocal sau PNRR.</p>
+      </article>
+      <article class="card service">
+        <div class="ico"><svg><use href="#i-code"/></svg></div>
+        <h3>Dezvoltare software</h3>
+        <p>Site-uri web personalizate, aplicații și soluții de automatizare bazate pe agenți AI.</p>
+      </article>
+    </div>
+    <div class="cta-block">
+      <a class="btn btn-wa btn-lg" href="#" data-wa="general" data-track="cta_whatsapp_servicii"><img class="wa-ico" src="assets/whatsapp.png" alt="" width="256" height="256">Discutați cu noi despre proiectul dumneavoastră</a>
+      <a class="btn btn-violet btn-lg" href="https://calendar.app.google/CpjHNeDtCuGkzk4h8" target="_blank" rel="noopener" data-track="cta_meet_servicii"><svg><use href="#i-video"/></svg>Programați un apel video</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 6. Cum lucrăm ===== -->
+<section id="cum-lucram">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Procesul de lucru</span>
+      <h2>Cum lucrăm</h2>
+      <p class="lead">Analizăm gratuit afacerea dumneavoastră și identificăm împreună unde soluțiile AI pot crește vânzările și pot eficientiza operațiunile și fluxurile de lucru. Apoi, pas cu pas:</p>
+    </div>
+    <div class="steps">
+      <article class="card step"><div class="n">1</div><h3>Discuție inițială</h3><p>Pe WhatsApp sau într-un apel video de 30 de minute pe Google Meet. Înțelegem nevoile, sistemele pe care le folosiți și obiectivele dumneavoastră.</p></article>
+      <article class="card step"><div class="n">2</div><h3>Analiză gratuită &amp; ofertare</h3><p>Proiectăm soluția și primiți o ofertă clară: ce livrăm, în cât timp și la ce preț.</p></article>
+      <article class="card step"><div class="n">3</div><h3>Contractare</h3><p>Semnăm contractul de consultanță, acordul de confidențialitate (NDA) și acordul GDPR cu împuternicirea pentru prelucrarea datelor. Avans 10%.</p></article>
+      <article class="card step"><div class="n">4</div><h3>Implementare</h3><p>Ne puneți în legătură cu persoanele de contact din firmă (tehnic, IT &amp; rețelistică, financiar, resurse umane) și ne oferiți acces la date, arhitectură și bazele de date. Construim soluția.</p></article>
+      <article class="card step"><div class="n">5</div><h3>Livrare &amp; rafinare</h3><p>Primiți dashboard-ul privat cu login, o sesiune de prezentare și ajustări pe baza feedback-ului dumneavoastră.</p></article>
+      <article class="card step"><div class="n">6</div><h3>Mentenanță &amp; suport</h3><p>Actualizări, monitorizare și suport continuu, pe bază de abonament lunar. Urgențe: 24/7.</p></article>
+    </div>
+    <div class="boxes">
+      <div class="box box-teal"><svg><use href="#i-clock"/></svg><div><strong>Termen garantat</strong><span>Primul dashboard AI în maximum 10 zile lucrătoare de la semnarea contractului.</span></div></div>
+      <div class="box box-violet"><svg><use href="#i-shield"/></svg><div><strong>Datele dumneavoastră rămân ale dumneavoastră</strong><span>NDA, acord GDPR, acces securizat, dashboard privat cu login.</span></div></div>
+    </div>
+    <div class="cta-block">
+      <a class="btn btn-violet btn-lg" href="https://calendar.app.google/CpjHNeDtCuGkzk4h8" target="_blank" rel="noopener" data-track="cta_meet_proces"><svg><use href="#i-video"/></svg>Programați analiza gratuită</a>
+      <a class="btn btn-wa btn-lg" href="#" data-wa="general" data-track="cta_whatsapp_proces"><img class="wa-ico" src="assets/whatsapp.png" alt="" width="256" height="256">Sau scrieți-ne pe WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 7. Despre noi ===== -->
+<section id="despre" class="section-alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Echipa BIZTECH</span>
+      <h2>Despre noi</h2>
+      <p class="lead">Doi co-fondatori cu perspective complementare — tehnologie, management și medicină — uniți de aceeași convingere: inovația trebuie să producă rezultate măsurabile.</p>
+    </div>
+
+    <div class="about person">
+      <div class="portrait">
+        <img src="assets/img/alin-labau.jpg" alt="Alin Labau, Co-Fondator BIZTECH Consulting" width="640" height="640" loading="lazy">
+        <a class="li" href="https://www.linkedin.com/in/alin-labau/" target="_blank" rel="noopener" data-track="cta_linkedin"><svg><use href="#i-user"/></svg>Profil LinkedIn</a>
+      </div>
+      <div>
+        <h3 class="person-name">Alin Labau</h3>
+        <p class="person-role">Co-Fondator BIZTECH Consulting · Consultant IT &amp; Project Manager</p>
+        <p>Cu peste 15 ani de experiență în IT și un parcurs construit în companii internaționale de top, transform complexitatea tehnologică în soluții simple și eficiente pentru clienții mei.</p>
+        <p>Din 2024 lucrez prin intermediul companiei mele, BIZTECH Consulting SRL, unde aduc această experiență internațională în sectorul HoReCa, atât în România, cât și în Suedia.</p>
+        <p><strong>Parcursul meu profesional a fost modelat de proiecte la scară largă:</strong></p>
+        <ul class="timeline">
+          <li><b>Nokia</b> — Am început cu un stagiu de practică în Finlanda, urmat de o invitație de a mă alătura echipei de cercetare din Lund, Suedia.</li>
+          <li><b>Microsoft</b> — Am făcut parte din divizia de R&amp;D din Suedia, contribuind la dezvoltarea smartphone-urilor Lumia cu Windows Phone.</li>
+          <li><b>Hays / Volkswagen</b> — Am contribuit la dezvoltarea sistemului de parcare inteligentă integrat în vehiculele Grupului VAG construite pe platforma electrică MEB.</li>
+        </ul>
+        <div class="facts">
+          <div class="fact"><b>15+ ani</b><span>în IT</span></div>
+          <div class="fact"><b>Black Belt</b><span>Lean Six Sigma</span></div>
+          <div class="fact"><b>3 limbi</b><span>română, engleză, suedeză</span></div>
+          <div class="fact"><b>RO ↔ SE</b><span>prezent frecvent în ambele țări</span></div>
+        </div>
+        <p>Dincolo de birou, proiecte și linii de cod, sunt o persoană orientată spre familie: sunt căsătorit și mândrul tată a trei copii, alături de care explorez natura în excursii de camping, off-road și pescuit.</p>
+        <p>Locuiesc în Suedia 🇸🇪 și călătoresc frecvent în România 🇷🇴 pentru a rămâne aproape de proiectele mele.</p>
+      </div>
+    </div>
+
+    <div class="about person">
+      <div class="portrait">
+        <img src="assets/img/george-labau.jpg" alt="George Lăbău, Co-Fondator BIZTECH Consulting" width="640" height="640" loading="lazy">
+      </div>
+      <div>
+        <h3 class="person-name">George Lăbău</h3>
+        <p class="person-role">Co-Fondator BIZTECH Consulting · Medic specialist ATI &amp; Business Manager</p>
+        <p>Îmbin medicina de înaltă precizie — anestezie și terapie intensivă — cu managementul de business. Obiectivul meu este să aduc rigoarea medicală în inovația tehnologică, pentru un impact real și măsurabil pe piață.</p>
+        <p>În cadrul BIZTECH Consulting coordonez direcția financiară a companiei, contractarea și achizițiile și construiesc relații de încredere, pe termen lung, cu clienții noștri.</p>
+        <p><strong>Direcțiile mele profesionale:</strong></p>
+        <ul class="timeline">
+          <li><b>Management financiar &amp; operațional</b> — Coordonez strategia financiară, achizițiile și relațiile cu clienții, pentru o creștere sustenabilă a companiei și parteneriate care durează.</li>
+          <li><b>Inovație AI în sănătate</b> — Integrarea sistemelor de inteligență artificială în spitalele din România — soluții care aduc valoare actului medical și eficienței administrative.</li>
+          <li><b>Robotică medicală și umanoidă</b> — Urmăresc constant frontiera tehnologiei medicale, cu un interes special pentru roboții umanoizi și sistemele robotice care pot asista și transforma procedurile din sănătate.</li>
+        </ul>
+        <div class="facts">
+          <div class="fact"><b>Medicină &amp; Business</b><span>expertiză ATI + management</span></div>
+          <div class="fact"><b>AI &amp; Robotică</b><span>focus: sănătate</span></div>
+          <div class="fact"><b>3 limbi</b><span>română, engleză, italiană</span></div>
+          <div class="fact"><b>Co‑Fondator</b><span>BIZTECH Consulting</span></div>
+        </div>
+        <p>Dincolo de cifre, contracte și activitatea clinică, cred în progresul prin tehnologie. Ca medic și antreprenor, sunt convins că inovația nu înlocuiește factorul uman — îi amplifică exponențial capacitatea de a salva și de a îmbunătăți vieți.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 8. Portofoliu ===== -->
+<section id="portofoliu">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Portofoliu clienți</span>
+      <h2>Studiu de caz: Grupul ANNA — Târgu Jiu, România</h2>
+      <p class="lead">Colaborare din 2024 · Grup de firme din Horeca</p>
+    </div>
+    <div class="case">
+      <div>
+        <p><strong>Contextul.</strong> În 2024 am pornit propria firmă de consultanță IT și am început colaborarea cu administratorul grupului de firme ANNA din Târgu Jiu, pentru care ofer consultanță de digitalizare și eficientizare, mentenanță și dezvoltare personalizată, precum și soluții de automatizare cu AI.</p>
+        <h3>Ce am livrat</h3>
+        <ul class="delivered">
+          <li>Meniuri digitale pentru restaurante</li>
+          <li>Sisteme de rezervare a meselor</li>
+          <li>Dezvoltarea și actualizarea site-urilor web</li>
+          <li>Gestionarea paginilor Google și a recenziilor</li>
+          <li>Securizarea și configurarea corectă a paginilor de social media</li>
+          <li>Coordonarea strategiei de social media și a canalelor de comunicare</li>
+          <li>Implementarea unei soluții complexe de livrare (delivery) furnizată de BITSOFT</li>
+          <li>Automatizări cu AI și dashboard-uri strategice</li>
+          <li>Consultanță pentru proiectele de digitalizare finanțate prin PNRR: analiza de nevoi, achiziții, instalări și implementări, audit tehnic</li>
+          <li>Optimizarea proceselor și a fluxurilor de lucru</li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn btn-wa btn-lg" href="#" data-wa="general" data-track="cta_whatsapp_portofoliu"><img class="wa-ico" src="assets/whatsapp.png" alt="" width="256" height="256">Vreau rezultate similare</a>
+        </div>
+      </div>
+      <div>
+        <h3>Rezultate</h3>
+        <div class="results">
+          <div class="result"><b>4 locații</b><span>consolidate într-un singur dashboard</span></div>
+          <div class="result"><b>163.000</b><span>comenzi/an analizate automat</span></div>
+          <div class="result"><b>7 centre</b><span>de profit comparate lună de lună</span></div>
+          <div class="result"><b>3,4% → 1,25%</b><span>retururi, după expunerea anomaliei</span></div>
+        </div>
+        <div class="testimonial">
+          <p class="quote">„Pe plan personal, Alin s-a dovedit un colaborator excelent — de încredere, serios și mereu orientat spre soluții. Îl recomand cu toată încrederea!”</p>
+          <details>
+            <summary>Citiți recomandarea completă</summary>
+            <p>„Capacitatea lui Alin de a coordona proiectele noastre IT, echipele multidisciplinare, furnizorii și instruirea personalului (atât live, cât și prin tutoriale video) și de a asigura livrări la termen a fost cu adevărat remarcabilă. A păstrat control deplin asupra scopului și calității proiectelor, anticipând constant provocările și oferind soluții eficiente și bine structurate.</p>
+            <p>Claritatea comunicării, simțul responsabilității și abordarea analitică au fost esențiale în transformarea unui concept tehnic complex într-un sistem complet funcțional, scalabil și sustenabil.</p>
+            <p>Pe plan personal, Alin s-a dovedit un colaborator excelent — de încredere, serios și mereu orientat spre soluții. Atitudinea pozitivă, adaptabilitatea și angajamentul față de excelență l-au făcut nu doar un consultant de neprețuit, ci și un partener respectat și apreciat de mine și de echipa mea. Îl recomand cu toată încrederea pe Alin!”</p>
+            <p class="muted" style="font-size:.85rem">Traducere din engleză; originalul este publicat pe LinkedIn, 31 octombrie 2025.</p>
+          </details>
+          <div class="who">
+            <div><b>Călin Lemnaru</b><span>Administrator, Grupul ANNA</span></div>
+            <a href="https://www.linkedin.com/in/alin-labau/" target="_blank" rel="noopener">Vezi pe LinkedIn →</a>
+          </div>
+        </div>
+        <p class="muted" style="margin-top:14px;font-size:.92rem">Referințe suplimentare disponibile la cerere.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 9. Întrebări frecvente ===== -->
+<section id="intrebari" class="section-alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">FAQ</span>
+      <h2>Întrebări frecvente</h2>
+    </div>
+    <div class="faq">
+      <details><summary>Cum vă contactez cel mai rapid?</summary><p>Pe WhatsApp, la +40 772 295 031 — răspundem de obicei în câteva minute, între 09:00 și 18:00, în fiecare zi a săptămânii. Pentru o discuție structurată, rezervați direct un apel video de 30 de minute pe Google Meet.</p></details>
+      <details><summary>Trebuie să schimbăm sistemul de casă sau ERP-ul?</summary><p>Nu. Modulul se conectează la Breeze, ExpresSoft sau Charisma ERP &amp; HCM și citește datele pe care le aveți deja. Nu modificăm nimic în sistemele existente — le punem cap la cap într-o singură pagină.</p></details>
+      <details><summary>Cât durează până vedem primele rezultate?</summary><p>Maximum 10 zile lucrătoare de la semnarea contractului până la primul dashboard, cu auditul pe ultimele luni și primele recomandări. Termenul este garantat în contract.</p></details>
+      <details><summary>Cât costă?</summary><p>Depinde de numărul de locații, de sistemele conectate și de complexitatea analizei. După discuția inițială și analiza gratuită primiți o ofertă clară: un proiect de implementare plus un abonament lunar de mentenanță. Fără costuri ascunse.</p></details>
+      <details><summary>Cine are acces la datele noastre?</summary><p>Doar persoanele desemnate de dumneavoastră. Semnăm un acord de confidențialitate și un acord GDPR cu împuternicire pentru prelucrarea datelor, iar dashboard-ul este privat, cu login și acces securizat.</p></details>
+      <details><summary>Avem mai multe locații sau mai multe firme. Funcționează?</summary><p>Da. Modulul consolidează mai multe locații și centre de profit, le compară între ele și arată unde performează fiecare.</p></details>
+      <details><summary>Lucrați și în Suedia sau cu companii din afara României?</summary><p>Da. Activăm în România și Suedia și lucrăm în română, engleză și suedeză. Ședințele se pot desfășura pe Google Meet sau WhatsApp video, oriunde v-ați afla.</p></details>
+      <details><summary>Ce se întâmplă după livrare?</summary><p>Mentenanță și suport pe bază de abonament: actualizări, rapoarte noi, monitorizare — plus consultanță pentru următoarele automatizări din firma dumneavoastră. Pentru urgențe suntem disponibili 24/7.</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 10. Contact ===== -->
+<section id="contact">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Contact</span>
+      <h2>Să discutăm despre afacerea dumneavoastră</h2>
+      <p class="lead">Alegeți canalul preferat. Pe WhatsApp răspundem de obicei în câteva minute; la formular și email, în maximum 24 de ore.</p>
+    </div>
+    <div class="channels">
+      <a class="channel wa" href="#" data-wa="general" data-track="cta_whatsapp_contact"><img class="wa-ico" src="assets/whatsapp.png" alt="" width="256" height="256"><b>WhatsApp</b><span>Scrieți-ne acum: +40 772 295 031</span></a>
+      <a class="channel" href="https://calendar.app.google/CpjHNeDtCuGkzk4h8" target="_blank" rel="noopener" data-track="cta_meet_contact"><svg><use href="#i-video"/></svg><b>Apel video Google Meet</b><span>Rezervați 30 de minute în calendarul nostru</span></a>
+      <a class="channel" href="tel:+40772295031" data-track="cta_tel_contact"><svg><use href="#i-phone"/></svg><b>Telefon</b><span>România +40 772 295 031<br>Suedia +46 720 123 475</span></a>
+      <a class="channel" href="mailto:contact@biztech.ro" data-track="cta_email_contact"><svg><use href="#i-mail"/></svg><b>Email</b><span>contact@biztech.ro</span></a>
+    </div>
+    <div class="contact-grid">
+      <form class="form" id="contact-form" novalidate>
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="fields">
+          <div><label for="f-nume">Nume și prenume *</label><input id="f-nume" name="nume" required autocomplete="name"></div>
+          <div><label for="f-email">Email *</label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
+          <div><label for="f-telefon">Telefon *</label><input id="f-telefon" name="telefon" type="tel" required autocomplete="tel" placeholder="+40 …"></div>
+          <div><label for="f-companie">Companie (opțional)</label><input id="f-companie" name="companie" autocomplete="organization"></div>
+          <div><label for="f-interes">Ce vă interesează</label>
+            <select id="f-interes" name="interes">
+              <option>Modul de raportare</option><option>Consultanță &amp; strategie AI</option><option>Automatizare</option><option>Project management</option><option>Altceva</option>
+            </select></div>
+          <div><label for="f-sistem">Sistemul pe care îl folosiți</label>
+            <select id="f-sistem" name="sistem">
+              <option>Breeze</option><option>ExpresSoft</option><option>Charisma</option><option>Altul</option><option>Nu știu</option>
+            </select></div>
+          <div class="full"><label for="f-mesaj">Mesaj (opțional)</label><textarea id="f-mesaj" name="mesaj"></textarea></div>
+        </div>
+        <label class="consent"><input type="checkbox" id="f-gdpr" required> <span>Sunt de acord ca BIZTECH CONSULTING SRL să îmi prelucreze datele pentru a răspunde solicitării mele. <a href="politica-confidentialitate.html">Politica de confidențialitate</a>. *</span></label>
+        <div class="actions">
+          <button class="btn btn-violet btn-lg" type="submit"><svg><use href="#i-mail"/></svg>Trimiteți solicitarea</button>
+          <button class="btn btn-wa btn-lg" type="button" id="contact-wa" data-track="cta_whatsapp_form"><img class="wa-ico" src="assets/whatsapp.png" alt="" width="256" height="256">Sau trimiteți pe WhatsApp</button>
+        </div>
+        <div class="form-msg" id="contact-msg" role="status"></div>
+      </form>
+      <div>
+        <div class="company">
+          <b>BIZTECH CONSULTING SRL</b>
+          B-dul Republicii, Bloc 30, Scara 1, Parter, Târgu Jiu, județul Gorj, România, 217459<br>
+          Telefon: <a href="tel:+40772295031">+40 772 295 031</a> (RO) · <a href="tel:+46720123475">+46 720 123 475</a> (SE)<br>
+          Email: <a href="mailto:contact@biztech.ro">contact@biztech.ro</a><br>
+          LinkedIn: <a href="https://www.linkedin.com/in/alin-labau/" target="_blank" rel="noopener">linkedin.com/in/alin-labau</a>
+        </div>
+        <div class="hours-box"><strong>Program:</strong> Luni–Duminică, 09:00–18:00<br><strong>Urgențe:</strong> 24/7</div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="container">
+    <div>
+      <div class="legal"><strong style="color:var(--text)">BIZTECH CONSULTING SRL</strong><br>Cod fiscal RO35626946 · Registrul Comerțului J2016000138184<br>EUID ROONRC.J2016000138184<br>B-dul Republicii, Bloc 30, Scara 1, Parter, Târgu Jiu, Gorj, 217459, România<br><a href="tel:+40772295031">+40 772 295 031</a> · <a href="tel:+46720123475">+46 720 123 475</a> · <a href="mailto:contact@biztech.ro">contact@biztech.ro</a> · <a href="https://www.linkedin.com/in/alin-labau/" target="_blank" rel="noopener">LinkedIn</a></div>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <ul><li><a href="politica-confidentialitate.html">Politica de confidențialitate</a></li><li><a href="https://anpc.ro/" target="_blank" rel="noopener nofollow">ANPC</a></li><li><a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener nofollow">Soluționarea online a litigiilor</a></li></ul>
+    </div>
+    <div>
+      <h4>Limbă</h4>
+      <ul class="langs"><li><a href="index.html" hreflang="ro" lang="ro" class="on"><img class="flag" src="assets/flags/ro.svg" alt="">Română</a></li><li><a href="en/index.html" hreflang="en" lang="en"><img class="flag" src="assets/flags/en.svg" alt="">English</a></li><li><a href="sv/index.html" hreflang="sv" lang="sv"><img class="flag" src="assets/flags/sv.svg" alt="">Svenska</a></li><li><a href="fr/index.html" hreflang="fr" lang="fr"><img class="flag" src="assets/flags/fr.svg" alt="">Français</a></li><li><a href="de/index.html" hreflang="de" lang="de"><img class="flag" src="assets/flags/de.svg" alt="">Deutsch</a></li></ul>
+    </div>
+    <div class="copy">© <span id="year">2026</span> BIZTECH CONSULTING SRL. Toate drepturile rezervate.</div>
+  </div>
+</footer>
+
+<!-- ===== Elemente persistente ===== -->
+<div class="bubble" id="bubble" role="dialog" aria-label="Mesaj WhatsApp">
+  <button class="x" type="button" aria-label="Închide">×</button>
+  Bună ziua! Răspundem pe WhatsApp de obicei în câteva minute, între 09:00 și 18:00.
+  <a class="btn btn-wa btn-sm" href="#" data-wa="general" data-track="cta_whatsapp_bubble"><img class="wa-ico" src="assets/whatsapp.png" alt="" width="256" height="256">Deschideți WhatsApp</a>
+</div>
+<div class="fab">
+  <span class="fab-label">Scrieți-ne pe WhatsApp</span>
+  <a class="fab-btn" href="#" data-wa="general" data-track="cta_whatsapp_fab" aria-label="Scrieți-ne pe WhatsApp"><img class="wa-ico" src="assets/whatsapp.png" alt="" width="256" height="256"></a>
+</div>
+<div class="mobile-bar" aria-label="Contact rapid">
+  <a class="btn btn-wa" href="#" data-wa="general" data-track="cta_whatsapp_mobilebar"><img class="wa-ico" src="assets/whatsapp.png" alt="" width="256" height="256">WhatsApp</a>
+  <a class="btn btn-outline" href="tel:+40772295031" data-track="cta_tel_mobilebar"><svg><use href="#i-phone"/></svg>Apel</a>
+  <a class="btn btn-violet" href="https://calendar.app.google/CpjHNeDtCuGkzk4h8" target="_blank" rel="noopener" data-track="cta_meet_mobilebar"><svg><use href="#i-video"/></svg>Meet</a>
+</div>
+<div class="cookie" id="cookie" role="dialog" aria-label="Cookies">
+  <p>Folosim cookie-uri pentru a măsura traficul (Google Analytics) și a îmbunătăți site-ul. Puteți accepta sau refuza cookie-urile de analiză.</p>
+  <div class="actions">
+    <button class="btn btn-violet btn-sm" type="button" id="cookie-accept">Accept</button>
+    <button class="btn btn-outline btn-sm" type="button" id="cookie-decline">Refuz</button>
+    <a class="btn btn-sm" style="color:var(--text-2)" href="politica-confidentialitate.html">Detalii</a>
+  </div>
+</div>
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ProfessionalService", "@id": "https://www.biztech.ro/#org", "name": "BIZTECH Consulting SRL", "url": "https://www.biztech.ro/", "email": "contact@biztech.ro", "telephone": ["+40772295031", "+46720123475"], "address": {"@type": "PostalAddress", "streetAddress": "B-dul Republicii, Bloc 30, Scara 1, Parter", "addressLocality": "Târgu Jiu", "addressRegion": "Gorj", "postalCode": "217459", "addressCountry": "RO"}, "areaServed": ["RO", "SE"], "openingHours": "Mo-Su 09:00-18:00", "founder": [{"@id": "https://www.biztech.ro/#alin"}, {"@id": "https://www.biztech.ro/#george"}], "inLanguage": "ro", "description": "Dashboard Raportare Inteligentă + Analiză AI pentru Horeca, conectat la Breeze, ExpresSoft și Charisma. Consultanță IT, strategie AI, management de proiect, dezvoltare software."}, {"@type": "Person", "@id": "https://www.biztech.ro/#alin", "name": "Alin Labau", "jobTitle": "Co-Fondator, Consultant IT & Project Manager", "worksFor": {"@id": "https://www.biztech.ro/#org"}, "sameAs": ["https://www.linkedin.com/in/alin-labau/"]}, {"@type": "Person", "@id": "https://www.biztech.ro/#george", "name": "George Lăbău", "jobTitle": "Co-Fondator BIZTECH Consulting · Medic specialist ATI & Business Manager", "worksFor": {"@id": "https://www.biztech.ro/#org"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Cum vă contactez cel mai rapid?", "acceptedAnswer": {"@type": "Answer", "text": "Pe WhatsApp, la +40 772 295 031 — răspundem de obicei în câteva minute, între 09:00 și 18:00, în fiecare zi a săptămânii. Pentru o discuție structurată, rezervați direct un apel video de 30 de minute pe Google Meet."}}, {"@type": "Question", "name": "Trebuie să schimbăm sistemul de casă sau ERP-ul?", "acceptedAnswer": {"@type": "Answer", "text": "Nu. Modulul se conectează la Breeze, ExpresSoft sau Charisma ERP & HCM și citește datele pe care le aveți deja. Nu modificăm nimic în sistemele existente — le punem cap la cap într-o singură pagină."}}, {"@type": "Question", "name": "Cât durează până vedem primele rezultate?", "acceptedAnswer": {"@type": "Answer", "text": "Maximum 10 zile lucrătoare de la semnarea contractului până la primul dashboard, cu auditul pe ultimele luni și primele recomandări. Termenul este garantat în contract."}}, {"@type": "Question", "name": "Cât costă?", "acceptedAnswer": {"@type": "Answer", "text": "Depinde de numărul de locații, de sistemele conectate și de complexitatea analizei. După discuția inițială și analiza gratuită primiți o ofertă clară: un proiect de implementare plus un abonament lunar de mentenanță. Fără costuri ascunse."}}, {"@type": "Question", "name": "Cine are acces la datele noastre?", "acceptedAnswer": {"@type": "Answer", "text": "Doar persoanele desemnate de dumneavoastră. Semnăm un acord de confidențialitate și un acord GDPR cu împuternicire pentru prelucrarea datelor, iar dashboard-ul este privat, cu login și acces securizat."}}, {"@type": "Question", "name": "Avem mai multe locații sau mai multe firme. Funcționează?", "acceptedAnswer": {"@type": "Answer", "text": "Da. Modulul consolidează mai multe locații și centre de profit, le compară între ele și arată unde performează fiecare."}}, {"@type": "Question", "name": "Lucrați și în Suedia sau cu companii din afara României?", "acceptedAnswer": {"@type": "Answer", "text": "Da. Activăm în România și Suedia și lucrăm în română, engleză și suedeză. Ședințele se pot desfășura pe Google Meet sau WhatsApp video, oriunde v-ați afla."}}, {"@type": "Question", "name": "Ce se întâmplă după livrare?", "acceptedAnswer": {"@type": "Answer", "text": "Mentenanță și suport pe bază de abonament: actualizări, rapoarte noi, monitorizare — plus consultanță pentru următoarele automatizări din firma dumneavoastră. Pentru urgențe suntem disponibili 24/7."}}]}]}</script>
+
+<script>
+/* ============================================================
+   Configurare — completați înainte de publicare
+   ============================================================ */
+const CONFIG = {
+  WA_NUMBER: '40772295031',                                   // WhatsApp (fără +)
+  WEB3FORMS_KEY: '795d0f5c-7b79-46c2-8b6d-91dd0be8b95b',                          // cheia de acces Web3Forms (se setează în _src/build.py); gol = fallback pe email (mailto)
+  GA_ID: 'G-P9GCEV3J79',                                      // Google Analytics 4 — tag-ul este în <head>; aici doar pentru evenimente
+  EMAIL: 'biztechconsultingsrl@gmail.com',                       // destinația formularelor (fallback mailto) — rămâne Gmail; adresa AFIȘATĂ pe site este contact@biztech.ro
+  PRODUCT: "Dashboard Raportare Inteligentă + Analiză AI",
+  LANG: 'ro'
+};
+const I18N = {"wa_general": "Bună ziua, aș dori mai multe detalii despre Dashboard Raportare Inteligentă + Analiză AI.", "wa_demo": "Bună ziua, aș dori un demo al modulului de raportare pe datele firmei mele.", "slide_n": "Imaginea", "err_email": "Vă rugăm să introduceți o adresă de email validă.", "subj_case": "Solicitare studiu de caz — Dashboard Raportare Inteligentă + Analiză AI", "body_case": "Bună ziua,\n\nVă rog să îmi trimiteți studiul de caz și prezentarea detaliată a modulului.", "ok_quick": "Mulțumim! Primiți materialele în maximum 24 de ore.", "err_quick": "Nu am putut trimite cererea. Scrieți-ne pe WhatsApp la +40 772 295 031.", "f_name": "Nume și prenume", "f_company_short": "Companie", "f_phone": "Telefon", "f_interest_short": "Interes", "f_system_short": "Sistem", "f_message_short": "Mesaj", "err_required": "Vă rugăm să completați câmpurile obligatorii.", "subj_contact": "Solicitare de pe site", "ok_contact": "Mulțumim! Vă contactăm în maximum 24 de ore. Dacă doriți un răspuns imediat, scrieți-ne pe WhatsApp.", "err_contact": "Nu am putut trimite formularul. Vă rugăm să încercați din nou sau să ne scrieți pe WhatsApp la +40 772 295 031.", "wa_hi_name": "Bună ziua, sunt", "wa_hi": "Bună ziua.", "wa_interest": "Mă interesează:", "wa_system": "Sistem folosit:"};
+const WA_TEXT = { general: I18N.wa_general, demo: I18N.wa_demo };
+const waLink = t => 'https://wa.me/' + CONFIG.WA_NUMBER + '?text=' + encodeURIComponent(t);
+
+/* ---- linkuri WhatsApp ---- */
+document.querySelectorAll('[data-wa]').forEach(a => { a.href = waLink(WA_TEXT[a.dataset.wa] || WA_TEXT.general); a.target = '_blank'; a.rel = 'noopener'; });
+
+/* ---- tema ---- */
+const root = document.documentElement;
+try { const saved = localStorage.getItem('biztech-theme'); if (saved) root.dataset.theme = saved; } catch (e) {}
+document.querySelector('.theme-toggle').addEventListener('click', () => {
+  root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+  try { localStorage.setItem('biztech-theme', root.dataset.theme); } catch (e) {}
+});
+
+/* ---- meniu mobil + link activ + selector limbă ---- */
+const header = document.querySelector('.header'), burger = document.querySelector('.burger');
+burger.addEventListener('click', () => { const open = header.classList.toggle('nav-open'); burger.setAttribute('aria-expanded', open); });
+document.querySelectorAll('.nav a').forEach(a => a.addEventListener('click', () => header.classList.remove('nav-open')));
+const langBox = document.querySelector('.lang');
+document.addEventListener('click', e => { if (langBox.open && !langBox.contains(e.target)) langBox.open = false; });
+const navLinks = [...document.querySelectorAll('.nav a')];
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id)); });
+}, { rootMargin: '-40% 0px -55% 0px' });
+document.querySelectorAll('main section[id]').forEach(s => io.observe(s));
+
+/* ---- carusel demo: săgeți + puncte + swipe + autoplay 3 s ---- */
+(function () {
+  const car = document.getElementById('carousel'), slides = [...car.querySelectorAll('.slide')], dots = document.getElementById('dots');
+  const AUTOPLAY_MS = 3000, RESUME_MS = 7000;
+  let idx = 0, timer = null, resumeTimer = null, visible = false;
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  slides.forEach((_, i) => { const b = document.createElement('button'); b.type = 'button'; b.setAttribute('aria-label', I18N.slide_n + ' ' + (i + 1)); b.addEventListener('click', () => { go(i); pause(true); }); dots.appendChild(b); });
+  function paint() { dots.querySelectorAll('button').forEach((b, i) => b.classList.toggle('on', i === idx)); }
+  function go(i, smooth = true) { idx = (i + slides.length) % slides.length; car.scrollTo({ left: slides[idx].offsetLeft - car.offsetLeft - 6, behavior: smooth ? 'smooth' : 'auto' }); paint(); }
+  function play() { if (reduced || timer || !visible) return; timer = setInterval(() => go(idx + 1), AUTOPLAY_MS); }
+  function stop() { clearInterval(timer); timer = null; }
+  function pause(userAction) { stop(); if (userAction) { clearTimeout(resumeTimer); resumeTimer = setTimeout(play, RESUME_MS); } }
+  document.querySelector('.car-btn.prev').addEventListener('click', () => { go(idx - 1); pause(true); });
+  document.querySelector('.car-btn.next').addEventListener('click', () => { go(idx + 1); pause(true); });
+  ['pointerdown', 'touchstart', 'wheel'].forEach(ev => car.addEventListener(ev, () => pause(true), { passive: true }));
+  car.addEventListener('mouseenter', () => stop()); car.addEventListener('mouseleave', () => play());
+  let st; car.addEventListener('scroll', () => { clearTimeout(st); st = setTimeout(() => { const x = car.scrollLeft; let best = 0, d = Infinity; slides.forEach((s, i) => { const dd = Math.abs(s.offsetLeft - car.offsetLeft - 6 - x); if (dd < d) { d = dd; best = i; } }); idx = best; paint(); }, 80); }, { passive: true });
+  new IntersectionObserver(e => { visible = e[0].isIntersecting; visible ? play() : stop(); }, { threshold: .35 }).observe(car);
+  document.addEventListener('visibilitychange', () => document.hidden ? stop() : play());
+  paint();
+})();
+
+/* ---- bula WhatsApp (o dată pe sesiune, după 6 s) ---- */
+const bubble = document.getElementById('bubble');
+try {
+  if (!sessionStorage.getItem('biztech-bubble')) setTimeout(() => bubble.classList.add('show'), 6000);
+} catch (e) {}
+bubble.querySelector('.x').addEventListener('click', () => { bubble.classList.remove('show'); try { sessionStorage.setItem('biztech-bubble', '1'); } catch (e) {} });
+bubble.querySelector('a').addEventListener('click', () => { try { sessionStorage.setItem('biztech-bubble', '1'); } catch (e) {} });
+
+/* ---- formulare ---- */
+function showMsg(el, ok, text) { el.className = 'form-msg ' + (ok ? 'ok' : 'err'); el.textContent = text; }
+async function send(payload, subject, body, form) {
+  if (form && form.botcheck && form.botcheck.checked) return 'bot';   // honeypot: roboții bifează câmpul invizibil → nu trimitem nimic
+  if (CONFIG.WEB3FORMS_KEY) {
+    const data = { access_key: CONFIG.WEB3FORMS_KEY, subject: subject, from_name: 'Site BIZTECH Consulting', ...payload, limba: CONFIG.LANG, pagina: location.href, botcheck: '' };
+    if (payload.email) data.replyto = payload.email;
+    const r = await fetch('https://api.web3forms.com/submit', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(data) });
+    const j = await r.json().catch(() => ({}));
+    if (!r.ok || !j.success) throw new Error(j.message || 'send failed');
+    return 'web3forms';
+  }
+  window.location.href = 'mailto:' + CONFIG.EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  return 'mailto';
+}
+const quick = document.getElementById('quick-form');
+quick.addEventListener('submit', async ev => {
+  ev.preventDefault();
+  const email = quick.email.value.trim(), msg = document.getElementById('quick-msg');
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return showMsg(msg, false, I18N.err_email);
+  try {
+    await send({ tip: 'studiu-de-caz', email }, I18N.subj_case, I18N.body_case + '\n\nEmail: ' + email, quick);
+    showMsg(msg, true, I18N.ok_quick); quick.reset(); track('form_quick');
+  } catch (e) { showMsg(msg, false, I18N.err_quick); }
+});
+const cf = document.getElementById('contact-form');
+const cfData = () => ({ nume: cf.nume.value.trim(), email: cf.email.value.trim(), telefon: cf.telefon.value.trim(), companie: cf.companie.value.trim(), interes: cf.interes.value, sistem: cf.sistem.value, mesaj: cf.mesaj.value.trim() });
+const cfText = d => `${I18N.f_name}: ${d.nume}\n${I18N.f_company_short}: ${d.companie || '-'}\n${I18N.f_phone}: ${d.telefon}\nEmail: ${d.email}\n${I18N.f_interest_short}: ${d.interes}\n${I18N.f_system_short}: ${d.sistem}\n${I18N.f_message_short}: ${d.mesaj || '-'}`;
+cf.addEventListener('submit', async ev => {
+  ev.preventDefault();
+  const msg = document.getElementById('contact-msg');
+  if (!cf.checkValidity()) { cf.reportValidity(); return showMsg(msg, false, I18N.err_required); }
+  const d = cfData();
+  try {
+    await send({ tip: 'contact', ...d }, I18N.subj_contact + ' — ' + d.nume, cfText(d), cf);
+    showMsg(msg, true, I18N.ok_contact); cf.reset(); track('form_submit');
+  } catch (e) { showMsg(msg, false, I18N.err_contact); }
+});
+document.getElementById('contact-wa').addEventListener('click', () => {
+  const d = cfData();
+  const text = (d.nume ? I18N.wa_hi_name + ' ' + d.nume + (d.companie ? ' (' + d.companie + ')' : '') + '. ' : I18N.wa_hi + ' ') + I18N.wa_interest + ' ' + d.interes + '. ' + I18N.wa_system + ' ' + d.sistem + '.' + (d.mesaj ? '\n' + d.mesaj : '');
+  window.open(waLink(text), '_blank', 'noopener');
+});
+
+/* ---- cookie + analytics (Consent Mode) ---- */
+const cookie = document.getElementById('cookie');
+function loadAnalytics() { if (window.gtag) gtag('consent', 'update', { 'analytics_storage': 'granted' }); }
+function track(name) { if (window.gtag) gtag('event', name, { lang: CONFIG.LANG }); }
+try {
+  const c = localStorage.getItem('biztech-cookies');
+  if (!c) cookie.classList.add('show'); else if (c === 'accepted') loadAnalytics();
+} catch (e) {}
+document.getElementById('cookie-accept').addEventListener('click', () => { try { localStorage.setItem('biztech-cookies', 'accepted'); } catch (e) {} cookie.classList.remove('show'); loadAnalytics(); });
+document.getElementById('cookie-decline').addEventListener('click', () => { try { localStorage.setItem('biztech-cookies', 'declined'); } catch (e) {} cookie.classList.remove('show'); });
+document.querySelectorAll('[data-track]').forEach(el => el.addEventListener('click', () => track(el.dataset.track)));
+
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

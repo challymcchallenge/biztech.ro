@@ -1,0 +1,628 @@
+<!-- ===== Header ===== -->
+<header class="header" id="top">
+  <div class="container">
+    <a class="logo" href="#acasa" aria-label="{{a11y_home}}">
+      <img class="logo-dark" src="{{base}}assets/logo-dark.svg" alt="BIZTECH Consulting" width="220" height="76">
+      <img class="logo-light" src="{{base}}assets/logo-light.svg" alt="BIZTECH Consulting" width="220" height="76">
+    </a>
+    <nav class="nav" aria-label="{{a11y_nav}}">
+      <a href="#acasa">{{nav_home}}</a>
+      <a href="#modul-raportare">{{nav_module}}</a>
+      <a href="#servicii">{{nav_services}}</a>
+      <a href="#cum-lucram">{{nav_process}}</a>
+      <a href="#despre">{{nav_about}}</a>
+      <a href="#portofoliu">{{nav_portfolio}}</a>
+      <a href="#contact">{{nav_contact}}</a>
+    </nav>
+    <div class="header-right">
+      <div class="header-phone">{{header_phones_html}}</div>
+      <details class="lang">
+        <summary title="{{a11y_lang}}" aria-label="{{a11y_lang}}"><img class="flag" src="{{base}}assets/flags/{{lang}}.svg" alt=""><span class="code">{{lang_code}}</span></summary>
+        <div class="lang-menu">{{lang_menu}}</div>
+      </details>
+      <button class="icon-btn theme-toggle" type="button" aria-label="{{a11y_theme}}">
+        <svg class="icon-moon"><use href="#i-moon"/></svg>
+        <svg class="icon-sun"><use href="#i-sun"/></svg>
+      </button>
+      <a class="btn btn-wa btn-sm" href="#" data-wa="general" data-track="cta_whatsapp_header"><img class="wa-ico" src="{{base}}assets/whatsapp.png" alt="" width="256" height="256"><span>WhatsApp</span></a>
+      <button class="icon-btn burger" type="button" aria-label="{{a11y_menu}}" aria-expanded="false"><svg><use href="#i-menu"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ===== 1. Hero ===== -->
+<section class="hero" id="acasa">
+  <video class="hero-video" autoplay muted loop playsinline poster="{{base}}assets/hero-poster.jpg" aria-hidden="true">
+    <source src="{{base}}assets/hero-bg.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay"></div>
+  <div class="container">
+    <div class="hero-text">
+      <span class="eyebrow">BIZTECH CONSULTING · Business &amp; Technology</span>
+      <h1>{{hero_h1_html}}</h1>
+      <p class="product"><span>{{product}}</span> — {{hero_product_tail}}</p>
+      <p class="lead">{{hero_lead}}</p>
+      <div class="cta-row cta-demo">
+        <a class="btn btn-demo btn-lg" href="{{demo_url}}" target="_blank" rel="noopener" data-track="cta_demo_hero"><svg><use href="#i-ext"/></svg>{{hero_demo_btn}}</a>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-wa btn-lg" href="#" data-wa="general" data-track="cta_whatsapp_hero"><img class="wa-ico" src="{{base}}assets/whatsapp.png" alt="" width="256" height="256">{{wa_write}}</a>
+        <a class="btn btn-violet btn-lg" href="{{meet_url}}" target="_blank" rel="noopener" data-track="cta_meet_hero"><svg><use href="#i-video"/></svg>{{hero_meet_btn}}</a>
+      </div>
+      <p class="hero-phones">{{hero_call_html}}
+        <span class="hours">{{hours_line}}</span></p>
+      <form class="quick-form" id="quick-form" novalidate>
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <label for="quick-email">{{quick_label}}</label>
+        <div class="row">
+          <input type="email" id="quick-email" name="email" placeholder="{{quick_placeholder}}" required autocomplete="email">
+          <button class="btn btn-violet" type="submit">{{quick_btn}}</button>
+        </div>
+        <small>{{quick_small}}</small>
+        <div class="form-msg" id="quick-msg" role="status"></div>
+      </form>
+    </div>
+    <div class="hero-visual" aria-hidden="true">
+      <div class="laptop"><img src="{{base}}assets/img/hero-desktop.png" alt="" width="1440" height="900" loading="eager"></div>
+      <div class="phone"><img src="{{base}}assets/img/hero-mobile.png" alt="" width="390" height="844"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Bara de încredere ===== -->
+<div class="trust" aria-label="{{a11y_trust}}">
+  <div class="container">
+    <div class="trust-item"><svg><use href="#i-plug"/></svg><div><strong>Breeze · ExpresSoft · Charisma ERP &amp; HCM</strong>{{trust1}}</div></div>
+    <div class="trust-item"><svg><use href="#i-award"/></svg><div><strong>{{trust2_b}}</strong>{{trust2}}</div></div>
+    <div class="trust-item"><svg><use href="#i-clock"/></svg><div><strong>{{trust3_b}}</strong>{{trust3}}</div></div>
+    <div class="trust-item"><svg><use href="#i-pin"/></svg><div><strong>{{trust4_b}}</strong>{{trust4}}</div></div>
+  </div>
+</div>
+
+<!-- ===== 2. Puncte de durere ===== -->
+<section id="probleme">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">{{pain_eyebrow}}</span>
+      <h2>{{pain_h2}}</h2>
+      <p class="lead">{{pain_lead}}</p>
+    </div>
+    <div class="pain-grid">
+      <article class="card"><div class="pain-num">01</div><h3>{{pain1_h}}</h3><p>{{pain1_p}}</p></article>
+      <article class="card"><div class="pain-num">02</div><h3>{{pain2_h}}</h3><p>{{pain2_p}}</p></article>
+      <article class="card"><div class="pain-num">03</div><h3>{{pain3_h}}</h3><p>{{pain3_p}}</p></article>
+      <article class="card"><div class="pain-num">04</div><h3>{{pain4_h}}</h3><p>{{pain4_p}}</p></article>
+      <article class="card"><div class="pain-num">05</div><h3>{{pain5_h}}</h3><p>{{pain5_p}}</p></article>
+    </div>
+    <p class="closing">{{pain_closing}}</p>
+    <div class="cta-row">
+      <a class="btn btn-wa btn-lg" href="#" data-wa="demo" data-track="cta_whatsapp_probleme"><img class="wa-ico" src="{{base}}assets/whatsapp.png" alt="" width="256" height="256">{{pain_cta}}</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 3. Beneficii ===== -->
+<section id="modul-raportare" class="section-alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">{{product}}</span>
+      <h2>{{ben_h2}}</h2>
+      <p class="lead">{{ben_lead}}</p>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <h3>{{ben1_h}}</h3>
+        <p>{{ben1_p}}</p>
+        <div class="proof">{{ben1_proof_html}}</div>
+      </div>
+      <div class="feature-media"><img src="{{base}}assets/img/hero-desktop.png" alt="{{ben1_alt}}" loading="lazy" width="1440" height="900"></div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <h3>{{ben2_h}}</h3>
+        <p>{{ben2_p}}</p>
+        <div class="proof">{{ben2_proof_html}}</div>
+      </div>
+      <div class="feature-media"><img src="{{base}}assets/img/beneficiu-pierderi.png" alt="{{ben2_alt}}" loading="lazy" width="1440" height="900"></div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <h3>{{ben3_h}}</h3>
+        <p>{{ben3_p}}</p>
+        <div class="proof">{{ben3_proof_html}}</div>
+      </div>
+      <div class="feature-media"><img src="{{base}}assets/img/beneficiu-tendinte.png" alt="{{ben3_alt}}" loading="lazy" width="1440" height="900"></div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-text">
+        <h3>{{ben4_h}}</h3>
+        <p>{{ben4_p}}</p>
+        <div class="proof">{{ben4_proof_html}}</div>
+      </div>
+      <div class="feature-media"><img src="{{base}}assets/img/beneficiu-concluzii.png" alt="{{ben4_alt}}" loading="lazy" width="1440" height="900"></div>
+    </div>
+
+    <div class="band">
+      <div>
+        <h3>{{band_h}}</h3>
+        <p>{{band_p}}</p>
+        <div class="cta-row">
+          <a class="btn btn-lg" style="background:#fff;color:#3A2390" href="{{mailto_case}}" data-track="cta_email_beneficii"><svg><use href="#i-mail"/></svg>{{band_email_btn}}</a>
+          <a class="btn btn-wa btn-lg" href="#" data-wa="general" data-track="cta_whatsapp_beneficii"><img class="wa-ico" src="{{base}}assets/whatsapp.png" alt="" width="256" height="256">{{band_wa_btn}}</a>
+        </div>
+      </div>
+      <div class="big">10<small>{{band_small}}</small></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 4. Demo ===== -->
+<section id="demo">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Demo</span>
+      <h2>{{demo_h2}}</h2>
+      <p class="lead">{{demo_lead}}</p>
+    </div>
+    <h3>{{demo_h3}}</h3>
+    <p class="muted" style="max-width:860px">{{demo_p}}</p>
+    <div class="chips" aria-label="{{a11y_chips}}">
+      <span class="chip"><b>{{chip1_b}}</b> · {{chip1}}</span>
+      <span class="chip"><b>{{chip2_b}}</b> · {{chip2}}</span>
+      <span class="chip"><b>{{chip3_b}}</b> · {{chip3}}</span>
+    </div>
+    <div class="carousel-wrap">
+      <button class="car-btn prev" type="button" aria-label="{{a11y_prev}}"><svg><use href="#i-left"/></svg></button>
+      <div class="carousel" id="carousel">
+        <figure class="slide"><div class="shot"><img src="{{base}}assets/img/demo-cum-functioneaza.png" alt="{{slide1_alt}}" loading="lazy"></div><figcaption><b>{{slide1_b}}</b> — {{slide1}}</figcaption></figure>
+        <figure class="slide"><div class="shot"><img src="{{base}}assets/img/demo-kds.png" alt="{{slide2_alt}}" loading="lazy"></div><figcaption><b>{{slide2_b}}</b> — {{slide2}}</figcaption></figure>
+        <figure class="slide"><div class="shot"><img src="{{base}}assets/img/demo-livrare.png" alt="{{slide3_alt}}" loading="lazy"></div><figcaption><b>{{slide3_b}}</b> — {{slide3}}</figcaption></figure>
+        <figure class="slide"><div class="shot"><img src="{{base}}assets/img/demo-fidelizare.png" alt="{{slide4_alt}}" loading="lazy"></div><figcaption><b>{{slide4_b}}</b> — {{slide4}}</figcaption></figure>
+        <figure class="slide"><div class="shot"><img src="{{base}}assets/img/demo-tableta.png" alt="{{slide5_alt}}" loading="lazy"></div><figcaption><b>{{slide5_b}}</b> — {{slide5}}</figcaption></figure>
+      </div>
+      <button class="car-btn next" type="button" aria-label="{{a11y_next}}"><svg><use href="#i-right"/></svg></button>
+    </div>
+    <div class="dots" id="dots" aria-label="{{a11y_dots}}"></div>
+    <div class="cta-row" style="margin-top:22px">
+      <a class="btn btn-violet btn-lg" href="{{demo_url}}" target="_blank" rel="noopener" data-track="cta_demo"><svg><use href="#i-ext"/></svg>{{demo_btn}}</a>
+      <a class="btn btn-wa btn-lg" href="#" data-wa="demo" data-track="cta_whatsapp_demo"><img class="wa-ico" src="{{base}}assets/whatsapp.png" alt="" width="256" height="256">{{demo_wa_btn}}</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 5. Produse & servicii ===== -->
+<section id="servicii" class="section-alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">{{svc_eyebrow}}</span>
+      <h2>{{svc_h2}}</h2>
+    </div>
+    <div class="grid grid-2">
+      <article class="card service">
+        <span class="tag">{{svc_tag}}</span>
+        <div class="ico"><svg><use href="#i-chart"/></svg></div>
+        <h3>{{svc1_h}}</h3>
+        <p><strong>{{product}}</strong> — {{svc1_p}}</p>
+        <a class="more" href="#demo">{{svc1_link}}</a>
+      </article>
+      <article class="card service">
+        <div class="ico"><svg><use href="#i-board"/></svg></div>
+        <h3>{{svc2_h}}</h3>
+        <p>{{svc2_p}}</p>
+      </article>
+      <article class="card service">
+        <div class="ico"><svg><use href="#i-target"/></svg></div>
+        <h3>{{svc3_h}}</h3>
+        <p>{{svc3_p}}</p>
+      </article>
+      <article class="card service">
+        <div class="ico"><svg><use href="#i-code"/></svg></div>
+        <h3>{{svc4_h}}</h3>
+        <p>{{svc4_p}}</p>
+      </article>
+    </div>
+    <div class="cta-block">
+      <a class="btn btn-wa btn-lg" href="#" data-wa="general" data-track="cta_whatsapp_servicii"><img class="wa-ico" src="{{base}}assets/whatsapp.png" alt="" width="256" height="256">{{svc_cta_wa}}</a>
+      <a class="btn btn-violet btn-lg" href="{{meet_url}}" target="_blank" rel="noopener" data-track="cta_meet_servicii"><svg><use href="#i-video"/></svg>{{svc_cta_meet}}</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 6. Cum lucrăm ===== -->
+<section id="cum-lucram">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">{{proc_eyebrow}}</span>
+      <h2>{{proc_h2}}</h2>
+      <p class="lead">{{proc_lead}}</p>
+    </div>
+    <div class="steps">
+      <article class="card step"><div class="n">1</div><h3>{{step1_h}}</h3><p>{{step1_p}}</p></article>
+      <article class="card step"><div class="n">2</div><h3>{{step2_h}}</h3><p>{{step2_p}}</p></article>
+      <article class="card step"><div class="n">3</div><h3>{{step3_h}}</h3><p>{{step3_p}}</p></article>
+      <article class="card step"><div class="n">4</div><h3>{{step4_h}}</h3><p>{{step4_p}}</p></article>
+      <article class="card step"><div class="n">5</div><h3>{{step5_h}}</h3><p>{{step5_p}}</p></article>
+      <article class="card step"><div class="n">6</div><h3>{{step6_h}}</h3><p>{{step6_p}}</p></article>
+    </div>
+    <div class="boxes">
+      <div class="box box-teal"><svg><use href="#i-clock"/></svg><div><strong>{{box1_b}}</strong><span>{{box1}}</span></div></div>
+      <div class="box box-violet"><svg><use href="#i-shield"/></svg><div><strong>{{box2_b}}</strong><span>{{box2}}</span></div></div>
+    </div>
+    <div class="cta-block">
+      <a class="btn btn-violet btn-lg" href="{{meet_url}}" target="_blank" rel="noopener" data-track="cta_meet_proces"><svg><use href="#i-video"/></svg>{{proc_cta_meet}}</a>
+      <a class="btn btn-wa btn-lg" href="#" data-wa="general" data-track="cta_whatsapp_proces"><img class="wa-ico" src="{{base}}assets/whatsapp.png" alt="" width="256" height="256">{{proc_cta_wa}}</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 7. Despre noi ===== -->
+<section id="despre" class="section-alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">{{about_eyebrow}}</span>
+      <h2>{{about_h2}}</h2>
+      <p class="lead">{{about_lead}}</p>
+    </div>
+
+    <div class="about person">
+      <div class="portrait">
+        <img src="{{base}}assets/img/alin-labau.jpg" alt="{{about_alt}}" width="640" height="640" loading="lazy">
+        <a class="li" href="https://www.linkedin.com/in/alin-labau/" target="_blank" rel="noopener" data-track="cta_linkedin"><svg><use href="#i-user"/></svg>{{about_li}}</a>
+      </div>
+      <div>
+        <h3 class="person-name">Alin Labau</h3>
+        <p class="person-role">{{about_role}}</p>
+        <p>{{about_p1}}</p>
+        <p>{{about_p2}}</p>
+        <p><strong>{{about_p3}}</strong></p>
+        <ul class="timeline">
+          <li><b>Nokia</b> — {{about_nokia}}</li>
+          <li><b>Microsoft</b> — {{about_msft}}</li>
+          <li><b>Hays / Volkswagen</b> — {{about_vw}}</li>
+        </ul>
+        <div class="facts">
+          <div class="fact"><b>{{fact1_b}}</b><span>{{fact1}}</span></div>
+          <div class="fact"><b>Black Belt</b><span>Lean Six Sigma</span></div>
+          <div class="fact"><b>{{fact3_b}}</b><span>{{fact3}}</span></div>
+          <div class="fact"><b>{{fact4_b}}</b><span>{{fact4}}</span></div>
+        </div>
+        <p>{{about_p4}}</p>
+        <p>{{about_p5}}</p>
+      </div>
+    </div>
+
+    <div class="about person">
+      <div class="portrait">
+        <img src="{{base}}assets/img/george-labau.jpg" alt="{{g_alt}}" width="640" height="640" loading="lazy">
+      </div>
+      <div>
+        <h3 class="person-name">George Lăbău</h3>
+        <p class="person-role">{{g_role}}</p>
+        <p>{{g_p1}}</p>
+        <p>{{g_p2}}</p>
+        <p><strong>{{g_p3}}</strong></p>
+        <ul class="timeline">
+          <li><b>{{g_dir1_b}}</b> — {{g_dir1}}</li>
+          <li><b>{{g_dir2_b}}</b> — {{g_dir2}}</li>
+          <li><b>{{g_dir3_b}}</b> — {{g_dir3}}</li>
+        </ul>
+        <div class="facts">
+          <div class="fact"><b>{{g_f1_b}}</b><span>{{g_f1}}</span></div>
+          <div class="fact"><b>{{g_f2_b}}</b><span>{{g_f2}}</span></div>
+          <div class="fact"><b>{{g_f3_b}}</b><span>{{g_f3}}</span></div>
+          <div class="fact"><b>{{g_f4_b}}</b><span>{{g_f4}}</span></div>
+        </div>
+        <p>{{g_p4}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 8. Portofoliu ===== -->
+<section id="portofoliu">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">{{port_eyebrow}}</span>
+      <h2>{{port_h2}}</h2>
+      <p class="lead">{{port_lead}}</p>
+    </div>
+    <div class="case">
+      <div>
+        <p><strong>{{port_ctx_b}}</strong> {{port_ctx}}</p>
+        <h3>{{port_h3_delivered}}</h3>
+        <ul class="delivered">
+          <li>{{del1}}</li>
+          <li>{{del2}}</li>
+          <li>{{del3}}</li>
+          <li>{{del4}}</li>
+          <li>{{del5}}</li>
+          <li>{{del6}}</li>
+          <li>{{del7}}</li>
+          <li>{{del8}}</li>
+          <li>{{del9}}</li>
+          <li>{{del10}}</li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn btn-wa btn-lg" href="#" data-wa="general" data-track="cta_whatsapp_portofoliu"><img class="wa-ico" src="{{base}}assets/whatsapp.png" alt="" width="256" height="256">{{port_cta}}</a>
+        </div>
+      </div>
+      <div>
+        <h3>{{port_h3_results}}</h3>
+        <div class="results">
+          <div class="result"><b>{{res1_b}}</b><span>{{res1}}</span></div>
+          <div class="result"><b>{{res2_b}}</b><span>{{res2}}</span></div>
+          <div class="result"><b>{{res3_b}}</b><span>{{res3}}</span></div>
+          <div class="result"><b>{{res4_b}}</b><span>{{res4}}</span></div>
+        </div>
+        <div class="testimonial">
+          <p class="quote">{{testi_quote}}</p>
+          <details>
+            <summary>{{testi_more}}</summary>
+            <p>{{testi_p1}}</p>
+            <p>{{testi_p2}}</p>
+            <p>{{testi_p3}}</p>
+            <p class="muted" style="font-size:.85rem">{{testi_note}}</p>
+          </details>
+          <div class="who">
+            <div><b>Călin Lemnaru</b><span>{{testi_role}}</span></div>
+            <a href="https://www.linkedin.com/in/alin-labau/" target="_blank" rel="noopener">{{testi_li}}</a>
+          </div>
+        </div>
+        <p class="muted" style="margin-top:14px;font-size:.92rem">{{port_refs}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 9. Întrebări frecvente ===== -->
+<section id="intrebari" class="section-alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">FAQ</span>
+      <h2>{{faq_h2}}</h2>
+    </div>
+    <div class="faq">
+      <details><summary>{{faq1_q}}</summary><p>{{faq1_a}}</p></details>
+      <details><summary>{{faq2_q}}</summary><p>{{faq2_a}}</p></details>
+      <details><summary>{{faq3_q}}</summary><p>{{faq3_a}}</p></details>
+      <details><summary>{{faq4_q}}</summary><p>{{faq4_a}}</p></details>
+      <details><summary>{{faq5_q}}</summary><p>{{faq5_a}}</p></details>
+      <details><summary>{{faq6_q}}</summary><p>{{faq6_a}}</p></details>
+      <details><summary>{{faq7_q}}</summary><p>{{faq7_a}}</p></details>
+      <details><summary>{{faq8_q}}</summary><p>{{faq8_a}}</p></details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 10. Contact ===== -->
+<section id="contact">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">{{contact_eyebrow}}</span>
+      <h2>{{contact_h2}}</h2>
+      <p class="lead">{{contact_lead}}</p>
+    </div>
+    <div class="channels">
+      <a class="channel wa" href="#" data-wa="general" data-track="cta_whatsapp_contact"><img class="wa-ico" src="{{base}}assets/whatsapp.png" alt="" width="256" height="256"><b>WhatsApp</b><span>{{ch_wa}}</span></a>
+      <a class="channel" href="{{meet_url}}" target="_blank" rel="noopener" data-track="cta_meet_contact"><svg><use href="#i-video"/></svg><b>{{ch_meet_b}}</b><span>{{ch_meet}}</span></a>
+      <a class="channel" href="tel:{{tel_primary}}" data-track="cta_tel_contact"><svg><use href="#i-phone"/></svg><b>{{ch_tel_b}}</b><span>{{ch_tel_html}}</span></a>
+      <a class="channel" href="mailto:contact@biztech.ro" data-track="cta_email_contact"><svg><use href="#i-mail"/></svg><b>Email</b><span>contact@biztech.ro</span></a>
+    </div>
+    <div class="contact-grid">
+      <form class="form" id="contact-form" novalidate>
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="fields">
+          <div><label for="f-nume">{{f_name}} *</label><input id="f-nume" name="nume" required autocomplete="name"></div>
+          <div><label for="f-email">Email *</label><input id="f-email" name="email" type="email" required autocomplete="email"></div>
+          <div><label for="f-telefon">{{f_phone}} *</label><input id="f-telefon" name="telefon" type="tel" required autocomplete="tel" placeholder="{{f_phone_ph}}"></div>
+          <div><label for="f-companie">{{f_company}}</label><input id="f-companie" name="companie" autocomplete="organization"></div>
+          <div><label for="f-interes">{{f_interest}}</label>
+            <select id="f-interes" name="interes">
+              <option>{{opt_i1}}</option><option>{{opt_i2}}</option><option>{{opt_i3}}</option><option>{{opt_i4}}</option><option>{{opt_i5}}</option>
+            </select></div>
+          <div><label for="f-sistem">{{f_system}}</label>
+            <select id="f-sistem" name="sistem">
+              <option>Breeze</option><option>ExpresSoft</option><option>Charisma</option><option>{{opt_s4}}</option><option>{{opt_s5}}</option>
+            </select></div>
+          <div class="full"><label for="f-mesaj">{{f_message}}</label><textarea id="f-mesaj" name="mesaj"></textarea></div>
+        </div>
+        <label class="consent"><input type="checkbox" id="f-gdpr" required> <span>{{f_consent}} <a href="{{policy_href}}">{{policy_link}}</a>. *</span></label>
+        <div class="actions">
+          <button class="btn btn-violet btn-lg" type="submit"><svg><use href="#i-mail"/></svg>{{f_submit}}</button>
+          <button class="btn btn-wa btn-lg" type="button" id="contact-wa" data-track="cta_whatsapp_form"><img class="wa-ico" src="{{base}}assets/whatsapp.png" alt="" width="256" height="256">{{f_wa}}</button>
+        </div>
+        <div class="form-msg" id="contact-msg" role="status"></div>
+      </form>
+      <div>
+        <div class="company">
+          <b>BIZTECH CONSULTING SRL</b>
+          {{company_addr}}<br>
+          {{lbl_phone}}: {{company_phones_html}}<br>
+          Email: <a href="mailto:contact@biztech.ro">contact@biztech.ro</a><br>
+          LinkedIn: <a href="https://www.linkedin.com/in/alin-labau/" target="_blank" rel="noopener">linkedin.com/in/alin-labau</a>
+        </div>
+        <div class="hours-box"><strong>{{lbl_hours}}:</strong> {{hours_short}}<br><strong>{{lbl_emerg}}:</strong> 24/7</div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="container">
+    <div>
+      <div class="legal"><strong style="color:var(--text)">BIZTECH CONSULTING SRL</strong><br>{{legal_vat}} RO35626946 · {{legal_reg}} J2016000138184<br>EUID ROONRC.J2016000138184<br>{{company_addr_short}}<br>{{footer_phones_html}} · <a href="mailto:contact@biztech.ro">contact@biztech.ro</a> · <a href="https://www.linkedin.com/in/alin-labau/" target="_blank" rel="noopener">LinkedIn</a></div>
+    </div>
+    <div>
+      <h4>{{footer_legal_h}}</h4>
+      <ul><li><a href="{{policy_href}}">{{policy_link}}</a></li><li><a href="https://anpc.ro/" target="_blank" rel="noopener nofollow">ANPC</a></li><li><a href="https://ec.europa.eu/consumers/odr" target="_blank" rel="noopener nofollow">{{footer_odr}}</a></li></ul>
+    </div>
+    <div>
+      <h4>{{footer_lang_h}}</h4>
+      <ul class="langs">{{lang_list_footer}}</ul>
+    </div>
+    <div class="copy">© <span id="year">2026</span> BIZTECH CONSULTING SRL. {{footer_rights}}</div>
+  </div>
+</footer>
+
+<!-- ===== Elemente persistente ===== -->
+<div class="bubble" id="bubble" role="dialog" aria-label="{{a11y_bubble}}">
+  <button class="x" type="button" aria-label="{{a11y_close}}">×</button>
+  {{bubble_text}}
+  <a class="btn btn-wa btn-sm" href="#" data-wa="general" data-track="cta_whatsapp_bubble"><img class="wa-ico" src="{{base}}assets/whatsapp.png" alt="" width="256" height="256">{{bubble_btn}}</a>
+</div>
+<div class="fab">
+  <span class="fab-label">{{wa_write}}</span>
+  <a class="fab-btn" href="#" data-wa="general" data-track="cta_whatsapp_fab" aria-label="{{wa_write}}"><img class="wa-ico" src="{{base}}assets/whatsapp.png" alt="" width="256" height="256"></a>
+</div>
+<div class="mobile-bar" aria-label="{{a11y_quick}}">
+  <a class="btn btn-wa" href="#" data-wa="general" data-track="cta_whatsapp_mobilebar"><img class="wa-ico" src="{{base}}assets/whatsapp.png" alt="" width="256" height="256">WhatsApp</a>
+  <a class="btn btn-outline" href="tel:{{tel_primary}}" data-track="cta_tel_mobilebar"><svg><use href="#i-phone"/></svg>{{bar_call}}</a>
+  <a class="btn btn-violet" href="{{meet_url}}" target="_blank" rel="noopener" data-track="cta_meet_mobilebar"><svg><use href="#i-video"/></svg>Meet</a>
+</div>
+<div class="cookie" id="cookie" role="dialog" aria-label="Cookies">
+  <p>{{cookie_text}}</p>
+  <div class="actions">
+    <button class="btn btn-violet btn-sm" type="button" id="cookie-accept">{{cookie_accept}}</button>
+    <button class="btn btn-outline btn-sm" type="button" id="cookie-decline">{{cookie_decline}}</button>
+    <a class="btn btn-sm" style="color:var(--text-2)" href="{{policy_href}}">{{cookie_details}}</a>
+  </div>
+</div>
+
+<script type="application/ld+json">{{jsonld}}</script>
+
+<script>
+/* ============================================================
+   Configurare — completați înainte de publicare
+   ============================================================ */
+const CONFIG = {
+  WA_NUMBER: '40772295031',                                   // WhatsApp (fără +)
+  WEB3FORMS_KEY: '{{web3forms_key}}',                          // cheia de acces Web3Forms (se setează în _src/build.py); gol = fallback pe email (mailto)
+  GA_ID: 'G-P9GCEV3J79',                                      // Google Analytics 4 — tag-ul este în <head>; aici doar pentru evenimente
+  EMAIL: 'biztechconsultingsrl@gmail.com',                       // destinația formularelor (fallback mailto) — rămâne Gmail; adresa AFIȘATĂ pe site este contact@biztech.ro
+  PRODUCT: {{js_product}},
+  LANG: '{{lang}}'
+};
+const I18N = {{js_i18n}};
+const WA_TEXT = { general: I18N.wa_general, demo: I18N.wa_demo };
+const waLink = t => 'https://wa.me/' + CONFIG.WA_NUMBER + '?text=' + encodeURIComponent(t);
+
+/* ---- linkuri WhatsApp ---- */
+document.querySelectorAll('[data-wa]').forEach(a => { a.href = waLink(WA_TEXT[a.dataset.wa] || WA_TEXT.general); a.target = '_blank'; a.rel = 'noopener'; });
+
+/* ---- tema ---- */
+const root = document.documentElement;
+try { const saved = localStorage.getItem('biztech-theme'); if (saved) root.dataset.theme = saved; } catch (e) {}
+document.querySelector('.theme-toggle').addEventListener('click', () => {
+  root.dataset.theme = root.dataset.theme === 'dark' ? 'light' : 'dark';
+  try { localStorage.setItem('biztech-theme', root.dataset.theme); } catch (e) {}
+});
+
+/* ---- meniu mobil + link activ + selector limbă ---- */
+const header = document.querySelector('.header'), burger = document.querySelector('.burger');
+burger.addEventListener('click', () => { const open = header.classList.toggle('nav-open'); burger.setAttribute('aria-expanded', open); });
+document.querySelectorAll('.nav a').forEach(a => a.addEventListener('click', () => header.classList.remove('nav-open')));
+const langBox = document.querySelector('.lang');
+document.addEventListener('click', e => { if (langBox.open && !langBox.contains(e.target)) langBox.open = false; });
+const navLinks = [...document.querySelectorAll('.nav a')];
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) navLinks.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id)); });
+}, { rootMargin: '-40% 0px -55% 0px' });
+document.querySelectorAll('main section[id]').forEach(s => io.observe(s));
+
+/* ---- carusel demo: săgeți + puncte + swipe + autoplay 3 s ---- */
+(function () {
+  const car = document.getElementById('carousel'), slides = [...car.querySelectorAll('.slide')], dots = document.getElementById('dots');
+  const AUTOPLAY_MS = 3000, RESUME_MS = 7000;
+  let idx = 0, timer = null, resumeTimer = null, visible = false;
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  slides.forEach((_, i) => { const b = document.createElement('button'); b.type = 'button'; b.setAttribute('aria-label', I18N.slide_n + ' ' + (i + 1)); b.addEventListener('click', () => { go(i); pause(true); }); dots.appendChild(b); });
+  function paint() { dots.querySelectorAll('button').forEach((b, i) => b.classList.toggle('on', i === idx)); }
+  function go(i, smooth = true) { idx = (i + slides.length) % slides.length; car.scrollTo({ left: slides[idx].offsetLeft - car.offsetLeft - 6, behavior: smooth ? 'smooth' : 'auto' }); paint(); }
+  function play() { if (reduced || timer || !visible) return; timer = setInterval(() => go(idx + 1), AUTOPLAY_MS); }
+  function stop() { clearInterval(timer); timer = null; }
+  function pause(userAction) { stop(); if (userAction) { clearTimeout(resumeTimer); resumeTimer = setTimeout(play, RESUME_MS); } }
+  document.querySelector('.car-btn.prev').addEventListener('click', () => { go(idx - 1); pause(true); });
+  document.querySelector('.car-btn.next').addEventListener('click', () => { go(idx + 1); pause(true); });
+  ['pointerdown', 'touchstart', 'wheel'].forEach(ev => car.addEventListener(ev, () => pause(true), { passive: true }));
+  car.addEventListener('mouseenter', () => stop()); car.addEventListener('mouseleave', () => play());
+  let st; car.addEventListener('scroll', () => { clearTimeout(st); st = setTimeout(() => { const x = car.scrollLeft; let best = 0, d = Infinity; slides.forEach((s, i) => { const dd = Math.abs(s.offsetLeft - car.offsetLeft - 6 - x); if (dd < d) { d = dd; best = i; } }); idx = best; paint(); }, 80); }, { passive: true });
+  new IntersectionObserver(e => { visible = e[0].isIntersecting; visible ? play() : stop(); }, { threshold: .35 }).observe(car);
+  document.addEventListener('visibilitychange', () => document.hidden ? stop() : play());
+  paint();
+})();
+
+/* ---- bula WhatsApp (o dată pe sesiune, după 6 s) ---- */
+const bubble = document.getElementById('bubble');
+try {
+  if (!sessionStorage.getItem('biztech-bubble')) setTimeout(() => bubble.classList.add('show'), 6000);
+} catch (e) {}
+bubble.querySelector('.x').addEventListener('click', () => { bubble.classList.remove('show'); try { sessionStorage.setItem('biztech-bubble', '1'); } catch (e) {} });
+bubble.querySelector('a').addEventListener('click', () => { try { sessionStorage.setItem('biztech-bubble', '1'); } catch (e) {} });
+
+/* ---- formulare ---- */
+function showMsg(el, ok, text) { el.className = 'form-msg ' + (ok ? 'ok' : 'err'); el.textContent = text; }
+async function send(payload, subject, body, form) {
+  if (form && form.botcheck && form.botcheck.checked) return 'bot';   // honeypot: roboții bifează câmpul invizibil → nu trimitem nimic
+  if (CONFIG.WEB3FORMS_KEY) {
+    const data = { access_key: CONFIG.WEB3FORMS_KEY, subject: subject, from_name: 'Site BIZTECH Consulting', ...payload, limba: CONFIG.LANG, pagina: location.href, botcheck: '' };
+    if (payload.email) data.replyto = payload.email;
+    const r = await fetch('https://api.web3forms.com/submit', { method: 'POST', headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' }, body: JSON.stringify(data) });
+    const j = await r.json().catch(() => ({}));
+    if (!r.ok || !j.success) throw new Error(j.message || 'send failed');
+    return 'web3forms';
+  }
+  window.location.href = 'mailto:' + CONFIG.EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  return 'mailto';
+}
+const quick = document.getElementById('quick-form');
+quick.addEventListener('submit', async ev => {
+  ev.preventDefault();
+  const email = quick.email.value.trim(), msg = document.getElementById('quick-msg');
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return showMsg(msg, false, I18N.err_email);
+  try {
+    await send({ tip: 'studiu-de-caz', email }, I18N.subj_case, I18N.body_case + '\n\nEmail: ' + email, quick);
+    showMsg(msg, true, I18N.ok_quick); quick.reset(); track('form_quick');
+  } catch (e) { showMsg(msg, false, I18N.err_quick); }
+});
+const cf = document.getElementById('contact-form');
+const cfData = () => ({ nume: cf.nume.value.trim(), email: cf.email.value.trim(), telefon: cf.telefon.value.trim(), companie: cf.companie.value.trim(), interes: cf.interes.value, sistem: cf.sistem.value, mesaj: cf.mesaj.value.trim() });
+const cfText = d => `${I18N.f_name}: ${d.nume}\n${I18N.f_company_short}: ${d.companie || '-'}\n${I18N.f_phone}: ${d.telefon}\nEmail: ${d.email}\n${I18N.f_interest_short}: ${d.interes}\n${I18N.f_system_short}: ${d.sistem}\n${I18N.f_message_short}: ${d.mesaj || '-'}`;
+cf.addEventListener('submit', async ev => {
+  ev.preventDefault();
+  const msg = document.getElementById('contact-msg');
+  if (!cf.checkValidity()) { cf.reportValidity(); return showMsg(msg, false, I18N.err_required); }
+  const d = cfData();
+  try {
+    await send({ tip: 'contact', ...d }, I18N.subj_contact + ' — ' + d.nume, cfText(d), cf);
+    showMsg(msg, true, I18N.ok_contact); cf.reset(); track('form_submit');
+  } catch (e) { showMsg(msg, false, I18N.err_contact); }
+});
+document.getElementById('contact-wa').addEventListener('click', () => {
+  const d = cfData();
+  const text = (d.nume ? I18N.wa_hi_name + ' ' + d.nume + (d.companie ? ' (' + d.companie + ')' : '') + '. ' : I18N.wa_hi + ' ') + I18N.wa_interest + ' ' + d.interes + '. ' + I18N.wa_system + ' ' + d.sistem + '.' + (d.mesaj ? '\n' + d.mesaj : '');
+  window.open(waLink(text), '_blank', 'noopener');
+});
+
+/* ---- cookie + analytics (Consent Mode) ---- */
+const cookie = document.getElementById('cookie');
+function loadAnalytics() { if (window.gtag) gtag('consent', 'update', { 'analytics_storage': 'granted' }); }
+function track(name) { if (window.gtag) gtag('event', name, { lang: CONFIG.LANG }); }
+try {
+  const c = localStorage.getItem('biztech-cookies');
+  if (!c) cookie.classList.add('show'); else if (c === 'accepted') loadAnalytics();
+} catch (e) {}
+document.getElementById('cookie-accept').addEventListener('click', () => { try { localStorage.setItem('biztech-cookies', 'accepted'); } catch (e) {} cookie.classList.remove('show'); loadAnalytics(); });
+document.getElementById('cookie-decline').addEventListener('click', () => { try { localStorage.setItem('biztech-cookies', 'declined'); } catch (e) {} cookie.classList.remove('show'); });
+document.querySelectorAll('[data-track]').forEach(el => el.addEventListener('click', () => track(el.dataset.track)));
+
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
