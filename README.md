@@ -1,62 +1,33 @@
-# BIZTECH Consulting — site one-page în 5 limbi (RO · EN · SV · FR · DE)
+🏆#𝐌𝐚𝐤𝐞-𝐈𝐓-𝐆𝐫𝐞𝐚𝐭-𝐅𝐨𝐫-𝐂𝐮𝐬𝐭𝐨𝐦𝐞𝐫 | 𝐰𝐰𝐰.𝐛𝐢𝐳𝐭𝐞𝐜𝐡.𝐫𝐨 | +𝟒𝟎𝟕𝟕𝟐𝟐𝟗𝟓𝟎𝟑𝟏
 
-Deschideți `index.html` direct în browser (dublu-click) — funcționează fără server; selectorul cu steaguri din header duce la `en/`, `sv/`, `fr/`, `de/`. Pentru publicare, urcați întregul folder `site/` pe Vercel, Netlify sau orice hosting static (acolo unde este și demo-ul, pe Vercel, este cel mai simplu: *Add New → Project → Upload* folderul `site`).
+--𝐇𝐎𝐖 𝐂𝐀𝐍 𝐈 𝐇𝐄𝐋𝐏 𝐘𝐎𝐔 ?--
 
-## Structura
+->𝐒𝐌𝐀𝐑𝐓 𝐀𝐈 𝐃𝐀𝐒𝐇𝐁𝐎𝐀𝐑𝐃𝐒: Connected to Breeze (POS), ExpresSoft (POS), and Charisma (ERP & HCM), delivering AI-generated analysis and actionable recommendations. Demo available on our website.
 
-| Fișier | Rol |
-|---|---|
-| `index.html`, `en/index.html`, `sv/index.html`, `fr/index.html`, `de/index.html` | Paginile pe limbi — **generate** din `_src/` (nu le editați direct; editați textele în `_src/i18n/*.py` și rulați `python3 _src/build.py`) |
-| `_src/template_body.html`, `_src/_css.html`, `_src/_sprite.html` | Structura paginii (o singură dată pentru toate limbile), stilurile, icoanele |
-| `_src/i18n/ro.py … de.py` | Toate textele, pe chei, câte un fișier pe limbă (`PHONE_ORDER` decide ce telefon apare primul) |
-| `_src/build.py` | Generatorul: completează șablonul, scrie `hreflang`, meniul de limbi, schema.org în limba paginii, `sitemap.xml` și `robots.txt`. `CLEAN_URLS = True` la publicare pe server (linkuri `/en/` în loc de `en/index.html`) |
-| `assets/flags/*.svg` | Steagurile din selectorul de limbă (din `Media/lang-*-icon.svg`) |
-| `politica-confidentialitate.html` | Politica de confidențialitate (deocamdată doar în română; paginile EN/SV/FR/DE trimit la ea) |
-| `assets/logo-dark.svg`, `assets/logo-light.svg`, `assets/favicon.ico`, `assets/whatsapp.png` | Logo pentru tema dark / light, favicon, iconul WhatsApp (din `Media/whatsapp-icon.png`, 256 px) |
-| `assets/hero-bg.mp4` (1,6 MB), `assets/hero-poster.jpg` | Videoclipul de fundal comprimat la 720p + imaginea statică afișată până se încarcă / pe mobil cu „reduce motion” |
-| `assets/img/` | Capturile de ecran folosite în pagină (din `screenshots-landing/web/`) și fotografia portret |
+->𝐏𝐑𝐎𝐉𝐄𝐂𝐓 𝐌𝐀𝐍𝐀𝐆𝐄𝐌𝐄𝐍𝐓: Looking to implement a technical solution (POS, ERP, CRM, HCM, or auto-fleet) or replace an existing system with a more efficient one, but lack someone on the team to manage the complexity? I take on the project manager role from A to Z—covering requirements, supplier selection, planning, technical coordination, and solution refinement.
 
-## Formulare → email prin Web3Forms (3 pași)
+->𝐈𝐓 𝐂𝐎𝐍𝐒𝐔𝐋𝐓𝐈𝐍𝐆 - 𝐀𝐈 𝐒𝐓𝐑𝐀𝐓𝐄𝐆𝐘: We audit your existing IT infrastructure, processes, and workflows, identify and rank high-ROI use cases, and re-engineer your core operations for maximum efficiency to increase sales and streamline performance.
 
-Site-ul este static (GitHub Pages nu rulează cod pe server), așa că formularele trimit datele la **Web3Forms**, un serviciu gratuit (250 de mesaje/lună) care le livrează ca email pe **biztechconsultingsrl@gmail.com** (adresa afișată vizitatorilor pe site este `contact@biztech.ro`; cele două pot coincide dacă `contact@biztech.ro` redirecționează spre Gmail). Cheia de acces Web3Forms este publică prin construcție (permite doar trimiterea către adresa asociată), deci poate sta liniștită în cod și în repository.
+->𝐒𝐎𝐅𝐓𝐖𝐀𝐑𝐄 𝐃𝐄𝐕𝐄𝐋𝐎𝐏𝐌𝐄𝐍𝐓: Custom websites, apps, and automation solutions powered by AI agents.
 
-1. Intrați pe **https://web3forms.com**, scrieți `biztechconsultingsrl@gmail.com` în câmpul „Create your Access Key” și apăsați butonul. Cheia (un cod de forma `xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`) sosește pe email în câteva secunde — verificați și Spam/Promotions.
-2. Deschideți `_src/build.py` și puneți cheia între ghilimele la `WEB3FORMS_KEY = ''`.
-3. Rulați `python3 _src/build.py` din folderul `site/` — cheia intră în toate cele 5 pagini. Trimiteți un mesaj de test din formular: sosește pe email în sub un minut, cu câmpurile în tabel, „Reply” merge direct la vizitator.
+--------------------
 
-Cât timp cheia este goală, formularele cad pe `mailto:` (se deschide clientul de email al vizitatorului), iar butonul „Sau trimiteți pe WhatsApp” compune mesajul din câmpuri. Protecție anti-spam: câmp invizibil (honeypot) + filtrul Web3Forms; dacă apare spam, în contul Web3Forms se poate activa hCaptcha (necesită o linie în plus în cod).
+--𝐀𝐁𝐎𝐔𝐓 𝐌𝐄--
 
-## Publicare pe GitHub Pages — repository: https://github.com/challymcchallenge/biztech.ro
+With over 15 years of experience in IT and a background built in top international companies, I transform technological complexity into simple, efficient solutions for clients. 
 
-Conținutul acestui folder (`site/`) este rădăcina repository-ului. Prima publicare, din Git Bash sau PowerShell, pe calculatorul dumneavoastră:
+𝐒𝐢𝐧𝐜𝐞 𝟐𝟎𝟐𝟒, 𝐈 𝐰𝐨𝐫𝐤 𝐭𝐡𝐫𝐨𝐮𝐠𝐡 𝐦𝐲 𝐜𝐨𝐦𝐩𝐚𝐧𝐲 𝐁𝐈𝐙𝐓𝐄𝐂𝐇 𝐂𝐨𝐧𝐬𝐮𝐥𝐭𝐢𝐧𝐠 𝐒𝐑𝐋, where I bring this international experience to the HoReCa sector in both Romania and Sweden.
 
-```bash
-cd "C:\Users\alinl\Desktop\Claude_CoWork\BIZTECH - Site\site"
-git init
-git add -A
-git commit -m "Site BIZTECH Consulting — RO/EN/SV/FR/DE"
-git branch -M main
-git remote add origin https://github.com/challymcchallenge/biztech.ro.git
-git push -u origin main --force
-```
+𝐌𝐲 𝐩𝐫𝐨𝐟𝐞𝐬𝐬𝐢𝐨𝐧𝐚𝐥 𝐣𝐨𝐮𝐫𝐧𝐞𝐲 𝐡𝐚𝐬 𝐛𝐞𝐞𝐧 𝐬𝐡𝐚𝐩𝐞𝐝 𝐛𝐲 𝐥𝐚𝐫𝐠𝐞-𝐬𝐜𝐚𝐥𝐞 𝐩𝐫𝐨𝐣𝐞𝐜𝐭𝐬:
 
-`--force` este necesar o singură dată, pentru că repository-ul are deja un README creat pe GitHub; de la a doua publicare înainte: `git add -A && git commit -m "..." && git push`.
+->𝐍𝐨𝐤𝐢𝐚: I started with an internship in Finland, followed by an invitation to join the research team in Lund, Sweden. 
 
-Apoi, pe GitHub: **Settings → Pages → Build and deployment → Source: Deploy from a branch → Branch `main`, folder `/ (root)` → Save.** În 1–2 minute site-ul este live la **https://challymcchallenge.github.io/biztech.ro/** (linkurile din pagini sunt relative, deci funcționează și în acest sub-folder). `.nojekyll` este inclus — fără el GitHub ar ignora folderul `_src/`.
+->𝐌𝐢𝐜𝐫𝐨𝐬𝐨𝐟𝐭: I was part of the R&D division in Sweden, contributing to the development of Lumia smartphones with Windows Phone. 
 
-Domeniu propriu (`www.biztech.ro`), când DNS-ul este pregătit: în `_src/build.py` setați `CUSTOM_DOMAIN = 'www.biztech.ro'` și `CLEAN_URLS = True`, rulați build (se creează fișierul `CNAME`), publicați; apoi Settings → Pages → Custom domain → `www.biztech.ro` → Save, bifați **Enforce HTTPS** după ce apare bifa verde. La registrarul domeniului: `CNAME  www → challymcchallenge.github.io` și, pentru `biztech.ro` fără www, 4 înregistrări `A` → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`. Nu creați fișierul `CNAME` înainte de a configura DNS-ul: cu el prezent, GitHub redirecționează adresa github.io către domeniu, care încă nu răspunde.
+->𝐇𝐚𝐲𝐬 / 𝐕𝐨𝐥𝐤𝐬𝐰𝐚𝐠𝐞𝐧: I helped develop the smart parking system integrated into VAG Group vehicles built on the MEB electric platform.  
 
-## Google Analytics
+𝐁𝐞𝐲𝐨𝐧𝐝 𝐭𝐡𝐞 𝐨𝐟𝐟𝐢𝐜𝐞, 𝐩𝐫𝐨𝐣𝐞𝐜𝐭𝐬 𝐚𝐧𝐝 𝐥𝐢𝐧𝐞𝐬 𝐨𝐟 𝐜𝐨𝐝𝐞, 𝐈 𝐚𝐦 𝐚 𝐟𝐚𝐦𝐢𝐥𝐲-𝐨𝐫𝐢𝐞𝐧𝐭𝐞𝐝 𝐩𝐞𝐫𝐬𝐨𝐧: I am married and the proud father of three children, with whom I explore nature through #camping, #off-roading, and #fishing trips. 
 
-Tag-ul oficial `G-P9GCEV3J79` este în `<head>` pe toate paginile, o singură dată, cu **Consent Mode v2**: pornește cu `analytics_storage: denied` și trece pe `granted` când vizitatorul apasă „Accept” în bannerul de cookie-uri (alegerea se memorează). Toate butoanele trimit evenimente (`cta_whatsapp_*`, `cta_meet_*`, `cta_tel_*`, `cta_demo*`, `form_submit`, `form_quick`), fiecare cu limba paginii.
+𝐈 𝐥𝐢𝐯𝐞 𝐢𝐧 𝐒𝐰𝐞𝐝𝐞𝐧 🇸🇪 𝐚𝐧𝐝 𝐭𝐫𝐚𝐯𝐞𝐥 𝐟𝐫𝐞𝐪𝐮𝐞𝐧𝐭𝐥𝐲 𝐭𝐨 𝐑𝐨𝐦𝐚𝐧𝐢𝐚 🇹🇩 to stay close to my projects. 
 
-Alte locuri de verificat: `DOMAIN` din `_src/build.py` (acum `https://www.biztech.ro`) este folosit pentru `canonical`, `hreflang`, `og:image`, `sitemap.xml`; dacă publicați provizoriu pe `github.io`, schimbați-l temporar sau lăsați-l — nu strică nimic, doar Google va prefera domeniul final.
-
-## Ce face pagina
-
-- Temă **dark implicit**, comutator ☀/☾ în header, memorată în browser.
-- **WhatsApp** este CTA-ul principal: buton verde în fiecare secțiune, buton lipicios dreapta-jos, bulă de mesaj după 6 secunde (o dată pe sesiune), iar pe mobil o bară fixă jos cu WhatsApp · Apel · Meet.
-- Caruselul din secțiunea Demo: autoplay la 3 secunde, săgeți și puncte (și pe mobil), swipe; se oprește când treceți cu mouse-ul sau interacționați și repornește după 7 secunde.
-- Rezervarea Google Meet duce la `https://calendar.app.google/CpjHNeDtCuGkzk4h8`; demo-ul la `https://smart-ai-dashboard.vercel.app/`.
-- Date structurate schema.org (ProfessionalService, Person, FAQPage) pentru Google.
-- Fonturi Google (Manrope + Inter) cu fallback pe fonturile sistemului dacă nu se încarcă.
+𝐋𝐞𝐭'𝐬 𝐜𝐨𝐧𝐧𝐞𝐜𝐭 & see how we can collaborate! 🚀
