@@ -1,0 +1,30 @@
+{
+ "lang": "fr",
+ "cur": "EUR",
+ "sections": {
+  "sumar": "03-synthese",
+  "vanzari": "04-ventes-revenus",
+  "trend": "05-tendances-saisonnalite",
+  "fidelizare": "06-programme-de-fidelite",
+  "produse": "07-produits-menu",
+  "kds": "08-cuisine-kds",
+  "livrare": "09-livraison",
+  "personal": "10-personnel-pointage",
+  "calitate": "11-qualite-pertes",
+  "reco": "12-conclusions-recommandations",
+  "despre": "13-comment-ca-marche"
+ },
+ "titles": {
+  "sumar": "Synthèse",
+  "vanzari": "Ventes & Revenus",
+  "trend": "Tendances & Saisonnalité",
+  "fidelizare": "Programme de fidélité",
+  "produse": "Produits & Menu",
+  "kds": "Cuisine / KDS",
+  "livrare": "Livraison",
+  "personal": "Personnel & Pointage",
+  "calitate": "Qualité & Pertes",
+  "reco": "Conclusions & Recommandations",
+  "despre": "Comment ça marche"
+ }
+}

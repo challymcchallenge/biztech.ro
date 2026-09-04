@@ -1,0 +1,30 @@
+{
+ "lang": "de",
+ "cur": "EUR",
+ "sections": {
+  "sumar": "03-management-zusammenfassung",
+  "vanzari": "04-verkaufe-umsatz",
+  "trend": "05-trends-saisonalitat",
+  "fidelizare": "06-treueprogramm",
+  "produse": "07-produkte-speisekarte",
+  "kds": "08-kuche-kds",
+  "livrare": "09-lieferung",
+  "personal": "10-personal-zeiterfassung",
+  "calitate": "11-qualitat-verluste",
+  "reco": "12-schlussfolgerungen-empfehlungen",
+  "despre": "13-so-funktioniert-es"
+ },
+ "titles": {
+  "sumar": "Management-Zusammenfassung",
+  "vanzari": "Verkäufe & Umsatz",
+  "trend": "Trends & Saisonalität",
+  "fidelizare": "Treueprogramm",
+  "produse": "Produkte & Speisekarte",
+  "kds": "Küche / KDS",
+  "livrare": "Lieferung",
+  "personal": "Personal & Zeiterfassung",
+  "calitate": "Qualität & Verluste",
+  "reco": "Schlussfolgerungen & Empfehlungen",
+  "despre": "So funktioniert es"
+ }
+}

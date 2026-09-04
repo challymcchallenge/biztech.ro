@@ -1,0 +1,30 @@
+{
+ "lang": "sv",
+ "cur": "EUR",
+ "sections": {
+  "sumar": "03-sammanfattning",
+  "vanzari": "04-forsaljning-intakter",
+  "trend": "05-trender-sasong",
+  "fidelizare": "06-lojalitetsprogram",
+  "produse": "07-produkter-meny",
+  "kds": "08-kok-kds",
+  "livrare": "09-leverans",
+  "personal": "10-personal-tidrapport",
+  "calitate": "11-kvalitet-forluster",
+  "reco": "12-slutsatser-rekommendationer",
+  "despre": "13-sa-fungerar-det"
+ },
+ "titles": {
+  "sumar": "Sammanfattning",
+  "vanzari": "Försäljning & Intäkter",
+  "trend": "Trender & Säsong",
+  "fidelizare": "Lojalitetsprogram",
+  "produse": "Produkter & Meny",
+  "kds": "Kök / KDS",
+  "livrare": "Leverans",
+  "personal": "Personal & Tidrapport",
+  "calitate": "Kvalitet & Förluster",
+  "reco": "Slutsatser & Rekommendationer",
+  "despre": "Så fungerar det"
+ }
+}

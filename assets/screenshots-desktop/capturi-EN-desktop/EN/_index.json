@@ -1,0 +1,30 @@
+{
+ "lang": "en",
+ "cur": "EUR",
+ "sections": {
+  "sumar": "03-executive-summary",
+  "vanzari": "04-sales-revenue",
+  "trend": "05-trends-seasonality",
+  "fidelizare": "06-loyalty-programme",
+  "produse": "07-products-menu",
+  "kds": "08-kitchen-kds",
+  "livrare": "09-delivery",
+  "personal": "10-staff-timesheets",
+  "calitate": "11-quality-losses",
+  "reco": "12-conclusions-recommendations",
+  "despre": "13-how-it-works"
+ },
+ "titles": {
+  "sumar": "Executive Summary",
+  "vanzari": "Sales & Revenue",
+  "trend": "Trends & Seasonality",
+  "fidelizare": "Loyalty Programme",
+  "produse": "Products & Menu",
+  "kds": "Kitchen / KDS",
+  "livrare": "Delivery",
+  "personal": "Staff & Timesheets",
+  "calitate": "Quality & Losses",
+  "reco": "Conclusions & Recommendations",
+  "despre": "How it works"
+ }
+}

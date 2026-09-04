@@ -1,0 +1,30 @@
+{
+ "lang": "ro",
+ "cur": "EUR",
+ "sections": {
+  "sumar": "03-sumar-executiv",
+  "vanzari": "04-vanzari-venituri",
+  "trend": "05-tendinte-sezonalitate",
+  "fidelizare": "06-plan-de-fidelizare",
+  "produse": "07-produse-meniu",
+  "kds": "08-bucatarie-kds",
+  "livrare": "09-livrare",
+  "personal": "10-personal-pontaj",
+  "calitate": "11-calitate-pierderi",
+  "reco": "12-concluzii-recomandari",
+  "despre": "13-cum-functioneaza"
+ },
+ "titles": {
+  "sumar": "Sumar Executiv",
+  "vanzari": "Vânzări & Venituri",
+  "trend": "Tendințe & Sezonalitate",
+  "fidelizare": "Plan de Fidelizare",
+  "produse": "Produse & Meniu",
+  "kds": "Bucătărie / KDS",
+  "livrare": "Livrare",
+  "personal": "Personal & Pontaj",
+  "calitate": "Calitate & Pierderi",
+  "reco": "Concluzii & Recomandări",
+  "despre": "Cum funcționează"
+ }
+}
